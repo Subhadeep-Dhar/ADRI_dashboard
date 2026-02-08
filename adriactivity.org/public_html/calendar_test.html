@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dynamic Calendar JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font Link for Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="script.js" defer></script>
+    <style>
+        /* Import Google font - Poppins */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            justify-content: center;
+            min-height: 100vh;
+            background: #9B59B6;
+        }
+
+        .wrapper {
+            width: 450px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .wrapper header {
+            display: flex;
+            align-items: center;
+            padding: 25px 30px 10px;
+            justify-content: space-between;
+        }
+
+        header .icons {
+            display: flex;
+        }
+
+        header .icons span {
+            height: 38px;
+            width: 38px;
+            margin: 0 1px;
+            cursor: pointer;
+            color: #878787;
+            text-align: center;
+            line-height: 38px;
+            font-size: 1.9rem;
+            user-select: none;
+            border-radius: 50%;
+        }
+
+        .icons span:last-child {
+            margin-right: -10px;
+        }
+
+        header .icons span:hover {
+            background: #f2f2f2;
+        }
+
+        header .current-date {
+            font-size: 1.45rem;
+            font-weight: 500;
+        }
+
+        .calendar {
+            padding: 20px;
+        }
+
+        .calendar ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            text-align: center;
+        }
+
+        .calendar .days {
+            margin-bottom: 20px;
+        }
+
+        .calendar li {
+            color: #333;
+            width: calc(100% / 7);
+            font-size: 1.07rem;
+        }
+
+        .calendar .weeks li {
+            font-weight: 500;
+            cursor: default;
+        }
+
+        .calendar .days li {
+            z-index: 1;
+            cursor: pointer;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .days li.inactive {
+            color: #aaa;
+        }
+
+        .days li.active {
+            color: #fff;
+        }
+
+        .days li.event-day {
+            background-color: #FFC107;
+            /* Highlight event days */
+            border-radius: 50%;
+            color: #fff;
+            position: relative;
+        }
+
+        .days li.event-day::before {
+            content: attr(data-event);
+            /* Show event name on hover */
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75rem;
+            background: #FFC107;
+            color: #fff;
+            padding: 2px 5px;
+            border-radius: 3px;
+            display: none;
+        }
+
+        .days li.event-day:hover::before {
+            display: block;
+        }
+
+        .days li:not(.active):hover::before {
+            background: #f2f2f2;
+        }
+
+        .days li::before {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            height: 40px;
+            width: 40px;
+            z-index: -1;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .days li.active::before {
+            background: #9B59B6;
+        }
+
+        .days li:not(.active):hover::before {
+            background: #f2f2f2;
+        }
+
+        /* Modal Styles */
+        .event-modal,
+        #eventModal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 400px;
+            /* Limit maximum width */
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+        }
+
+        #eventModal .modal-content,
+        .event-modal .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            text-align: center;
+        }
+
+        .modal-content h2 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .modal-content label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #555;
+            height: 50px;
+        }
+
+        .modal-content input,
+        .modal-content textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .modal-content textarea {
+            width: 100%;
+            height: 80px;
+            /* Adjusted height */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+            font-size: 14px;
+
+        }
+
+        i,
+        span {
+            display: inline-block;
+            cursor: pointer;
+            /* width: 100px; */
+        }
+
+        .modal-content button {
+            margin: 0 5px;
+            padding: 8px 12px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .modal-content button#save-event {
+            background-color: #9B59B6;
+            color: white;
+        }
+
+        button#save-event:hover {
+            background-color: #7D3C98;
+        }
+
+        .modal-content button#cancel-event {
+            background-color: #ddd;
+            color: #333;
+            cursor: pointer;
+        }
+
+        button#cancel-event:hover {
+            background-color: #bbb;
+        }
+
+        /* Event Info Styles */
+        #eventInfo {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        #eventInfo p {
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+
+        #eventInfo strong {
+            color: #007bff;
+            /* Highlight for event titles */
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 480px) {
+            .event-modal {
+                width: 95%;
+                padding: 15px;
+            }
+
+            .modal-content textarea {
+                height: 60px;
+                font-size: 12px;
+            }
+
+            .modal-content button {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+
+            .close-btn {
+                font-size: 18px;
+            }
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .close-btn:hover {
+            color: #ff4c4c;
+            /* cursor: pointer; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <p class="current-date"></p>
+            <div class="icons">
+                <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                <span id="next" class="material-symbols-rounded">chevron_right</span>
+            </div>
+        </header>
+        <div class="calendar">
+            <ul class="weeks">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+            </ul>
+            <ul class="days"></ul>
+        </div>
+    </div>
+
+    <!-- Event Modal -->
+    <div id="eventModal" style="display:none;">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <form id="eventForm">
+                <label>Event Name: <input type="text" id="eventName" required></label><br>
+                <label>Event Date: <input type="date" id="eventDate" required></label><br>
+                <label>Ending Date: <input type="date" id="endDate"></label><br>
+                <label>Start Time: <input type="time" id="startTime"></label><br>
+                <label>End Time: <input type="time" id="endTime"></label><br>
+                <label>Location: <input type="text" id="location"></label><br>
+                <label>Description: <textarea id="description"></textarea></label><br>
+                <button type="button" id="addEventBtn">Add Event</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Event Info Display -->
+    <div id="eventInfo" style="display:none;"></div>
+
+
+    <script>
+        const daysTag = document.querySelector(".days"),
+            currentDate = document.querySelector(".current-date"),
+            prevNextIcon = document.querySelectorAll(".icons span");
+
+        // getting new date, current year and month
+        let date = new Date(),
+            currYear = date.getFullYear(),
+            currMonth = date.getMonth();
+
+        // storing full name of all months in array
+        const months = ["January", "February", "March", "April", "May", "June", "July",
+            "August", "September", "October", "November", "December"];
+
+        const renderCalendar = () => {
+            let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // getting first day of month
+                lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of month
+                lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(), // getting last day of month
+                lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previous month
+            let liTag = "";
+
+            for (let i = firstDayofMonth; i > 0; i--) { // creating li of previous month last days
+                liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
+            }
+
+            for (let i = 1; i <= lastDateofMonth; i++) { // creating li of all days of current month
+                // adding active class to li if the current day, month, and year matched
+                let isToday = i === date.getDate() && currMonth === new Date().getMonth()
+                    && currYear === new Date().getFullYear() ? "active" : "";
+                liTag += `<li class="${isToday}">${i}</li>`;
+            }
+
+            for (let i = lastDayofMonth; i < 6; i++) { // creating li of next month first days
+                liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
+            }
+            currentDate.innerText = `${months[currMonth]} ${currYear}`; // passing current mon and yr as currentDate text
+            daysTag.innerHTML = liTag;
+        }
+        renderCalendar();
+
+        prevNextIcon.forEach(icon => { // getting prev and next icons
+            icon.addEventListener("click", () => { // adding click event on both icons
+                // if clicked icon is previous icon then decrement current month by 1 else increment it by 1
+                currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+
+                if (currMonth < 0 || currMonth > 11) { // if current month is less than 0 or greater than 11
+                    // creating a new date of current year & month and pass it as date value
+                    date = new Date(currYear, currMonth, new Date().getDate());
+                    currYear = date.getFullYear(); // updating current year with new date year
+                    currMonth = date.getMonth(); // updating current month with new date month
+                } else {
+                    date = new Date(); // pass the current date as date value
+                }
+                renderCalendar(); // calling renderCalendar function
+            });
+        });
+
+
+
+
+        function highlightEvents() {
+            fetch("event_handler.php?action=get")
+                .then((res) => res.json())
+                .then((data) => {
+                    events = data;
+                    document.querySelectorAll(".days li").forEach((day) => {
+                        const date = `${currYear}-${String(currMonth + 1).padStart(2, "0")}-${String(day.innerText).padStart(2, "0")}`;
+                        if (events[date]) {
+                            day.style.background = "#FFC107"; // Highlight date
+                            day.style.color = "#fff";
+
+                            // Check for multi-day events
+                            if (events[date].end_date) {
+                                const startDate = new Date(events[date].date);
+                                const endDate = new Date(events[date].end_date);
+                                for (let d = new Date(startDate); d <= endDate; d.setDate(d.getDate() + 1)) {
+                                    const formattedDate = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+                                    document.querySelectorAll(".days li").forEach((multiDay) => {
+                                        if (multiDay.innerText === String(d.getDate()) && currMonth === d.getMonth()) {
+                                            multiDay.style.background = "#FFC107";
+                                            multiDay.style.color = "#fff";
+                                        }
+                                    });
+                                }
+                            }
+
+                            day.addEventListener("click", () => showEventInfo(events[date]));
+                        }
+                    });
+                });
+        }
+
+
+
+
+
+
+        function showEventInfo(event) {
+            const info = document.getElementById("eventInfo");
+            info.style.display = "block";
+            info.innerHTML = `
+        <p><strong>${event.name}</strong></p>
+        <p>Date: ${event.date} ${event.end_date ? "to " + event.end_date : ""}</p>
+        <p>Time: ${event.start_time || "N/A"} - ${event.end_time || "N/A"}</p>
+        <p>Location: ${event.location || "N/A"}</p>
+        <p>Description: ${event.description || "N/A"}</p>
+        <button onclick="deleteEvent(${event.id})">Delete</button>
+        <button onclick="editEvent(${event.id})">Edit</button>
+    `;
+        }
+
+
+
+
+
+
+
+        function deleteEvent(eventId) {
+            fetch(`event_handler.php?action=delete&id=${eventId}`, { method: "DELETE" })
+                .then((res) => res.json())
+                .then((data) => {
+                    if (data.success) {
+                        alert("Event deleted successfully!");
+                        renderCalendar();
+                    } else {
+                        alert("Failed to delete event.");
+                    }
+                });
+        }
+
+
+
+
+
+
+
+
+
+        function editEvent(eventId) {
+            const event = events.find(e => e.id === eventId);
+            if (event) {
+                document.getElementById("eventName").value = event.name;
+                document.getElementById("eventDate").value = event.date;
+                document.getElementById("endDate").value = event.end_date || "";
+                document.getElementById("startTime").value = event.start_time || "";
+                document.getElementById("endTime").value = event.end_time || "";
+                document.getElementById("location").value = event.location || "";
+                document.getElementById("description").value = event.description || "";
+                document.getElementById("eventModal").style.display = "block";
+
+                // Update form action
+                document.getElementById("addEventBtn").innerText = "Update Event";
+                document.getElementById("addEventBtn").onclick = function () {
+                    const updatedEvent = {
+                        id: eventId,
+                        name: document.getElementById("eventName").value,
+                        date: document.getElementById("eventDate").value,
+                        endDate: document.getElementById("endDate").value || null,
+                        startTime: document.getElementById("startTime").value || null,
+                        endTime: document.getElementById("endTime").value || null,
+                        location: document.getElementById("location").value || null,
+                        description: document.getElementById("description").value || null,
+                    };
+
+                    fetch("event_handler.php", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ action: "edit", event: updatedEvent }),
+                    }).then((res) => res.json())
+                        .then((data) => {
+                            if (data.success) {
+                                alert("Event updated successfully!");
+                                renderCalendar();
+                            } else {
+                                alert("Failed to update event.");
+                            }
+                        });
+
+                    document.getElementById("eventModal").style.display = "none";
+                };
+            }
+        }
+
+
+
+
+        let events = {}; // To store events temporarily
+
+        // Show event modal on date click
+        document.querySelector(".days").addEventListener("click", (e) => {
+            if (e.target.tagName === "LI" && !e.target.classList.contains("inactive")) {
+                const selectedDate = `${currYear}-${String(currMonth + 1).padStart(2, "0")}-${String(e.target.innerText).padStart(2, "0")}`;
+                document.getElementById("eventDate").value = selectedDate;
+                document.getElementById("eventModal").style.display = "block";
+            }
+        });
+
+        // Close modal
+        document.getElementById("closeModal").addEventListener("click", () => {
+            document.getElementById("eventModal").style.display = "none";
+        });
+
+        // Add event
+        document.getElementById("addEventBtn").addEventListener("click", () => {
+            const eventData = {
+                name: document.getElementById("eventName").value,
+                date: document.getElementById("eventDate").value,
+                endDate: document.getElementById("endDate").value || null,
+                startTime: document.getElementById("startTime").value || null,
+                endTime: document.getElementById("endTime").value || null,
+                location: document.getElementById("location").value || null,
+                description: document.getElementById("description").value || null,
+            };
+
+            // Save event to the database using AJAX
+            fetch("event_handler.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ action: "add", event: eventData }),
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    if (data.success) {
+                        alert("Event added successfully!");
+                        renderCalendar(); // Re-render calendar
+                    } else {
+                        alert("Failed to add event.");
+                    }
+                });
+
+
+            document.getElementById("eventModal").style.display = "none";
+        });
+
+        // Highlight dates with events
+        function highlightEvents() {
+            fetch("event_handler.php?action=get")
+                .then((res) => res.json())
+                .then((data) => {
+                    events = data; // Store events
+                    document.querySelectorAll(".days li").forEach((day) => {
+                        const date = `${currYear}-${String(currMonth + 1).padStart(2, "0")}-${String(day.innerText).padStart(2, "0")}`;
+                        if (events[date]) {
+                            day.style.background = "#FFC107"; // Highlight date
+                            day.style.color = "#fff";
+                            day.addEventListener("click", () => showEventInfo(events[date]));
+                        }
+                    });
+                });
+        }
+
+        // Show event info
+        function showEventInfo(event) {
+            const info = document.getElementById("eventInfo");
+            info.style.display = "block";
+            info.innerHTML = `
+    <p><strong>${event.name}</strong></p>
+    <p>Date: ${event.date} ${event.endDate ? "to " + event.endDate : ""}</p>
+    <p>Time: ${event.startTime || "N/A"} - ${event.endTime || "N/A"}</p>
+    <p>Location: ${event.location || "N/A"}</p>
+    <p>Description: ${event.description || "N/A"}</p>
+  `;
+        }
+
+    </script>
+
+</body>
+
+</html>

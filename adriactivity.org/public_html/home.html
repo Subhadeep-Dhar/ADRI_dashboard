@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en"
+   class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths wf-myriadpro-n4-active wf-myriadpro-n6-active webkit-browser wf-skippysharp-n4-active wf-myriadpro-n3-active wf-myriadpro-i4-active wf-active">
+
+<head>
+   <meta http-equiv="origin-trial"
+      content="A/kargTFyk8MR5ueravczef/wIlTkbVk1qXQesp39nV+xNECPdLBVeYffxrM8TmZT6RArWGQVCJ0LRivD7glcAUAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+   <style type="text/css">
+      @charset "UTF-8";
+
+      [ng\:cloak],
+      [ng-cloak],
+      [data-ng-cloak],
+      [x-ng-cloak],
+      .ng-cloak,
+      .x-ng-cloak,
+      .ng-hide:not(.ng-hide-animate) {
+         display: none !important;
+      }
+
+      ng\:form {
+         display: block;
+      }
+
+      .ng-animate-shim {
+         visibility: hidden;
+      }
+
+      .ng-anchor {
+         position: absolute;
+      }
+   </style>
+
+
+   <!-- Google Tag Manager -->
+   <script type="text/javascript" async="" src="https://widget.intercom.io/widget/g2fesnpx"></script>
+   <script type="text/javascript" async=""
+      src="https://www.googletagmanager.com/gtag/destination?id=AW-1011197709&amp;l=dataLayer&amp;cx=c&amp;gtm=45He4cc1v844524082za200"></script>
+   <script type="text/javascript" async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-200FM4RVS4&amp;l=dataLayer&amp;cx=c&amp;gtm=45He4cc1v844524082za200"></script>
+   <script type="text/javascript" async=""
+      src="https://consent.cookiebot.com/uc.js?cbid=a5500808-1f49-4f8c-be43-b0029ec0cf71&amp;implementation=gtm&amp;consentmode-dataredaction=dynamic"
+      id="Cookiebot"></script>
+   <script async="" crossorigin="anonymous" src="https://edge.fullstory.com/s/fs.js"></script>
+   <script type="text/javascript" async="" charset="utf-8"
+      src="https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__en.js" crossorigin="anonymous"
+      integrity="sha384-8mJgBUBw4uTWF9Ooxgb4sUuO9jKtaVm1I+8vb0qpxxX3cafec7ovH+goM3yD4UyO"></script>
+   <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NDRKTM9"></script>
+   <script>(function (w, d, s, l, i) {
+         w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+               new Date().getTime(), event: 'gtm.js'
+         }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NDRKTM9');</script>
+   <!-- End Google Tag Manager -->
+   <script>
+      window.dataLayer = window.dataLayer || [];
+   </script>
+
+   <meta charset="utf-8">
+   <meta name="description" content="Interactive Calendar Add/edit/delete events demo. With source code. Try it!">
+   <meta name="author" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="theme-color" content="#011742">
+   <meta name="msapplication-tap-highlight" content="no">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="p:domain_verify" content="6eda7ad91057c1bfd4b436549ac6bd33">
+
+   <meta property="og:title" content="Calendar Add/edit/delete events Fullscreen Example | Mobiscroll">
+   <meta property="og:type" content="website">
+   <meta property="og:url"
+      content="https://demo.mobiscroll.com/fullscreen/eventcalendar/create-read-update-delete-CRUD">
+   <meta property="og:image" content="https://img.mobiscroll.com/market/fb-home.png">
+   <meta property="og:description"
+      content="Interactive Calendar Add/edit/delete events demo. With source code. Try it!">
+
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:site" content="@mobiscroll">
+   <meta name="twitter:title" content="Calendar Add/edit/delete events Fullscreen Example | Mobiscroll">
+   <meta name="twitter:description"
+      content="Interactive Calendar Add/edit/delete events demo. With source code. Try it!">
+   <meta name="twitter:image" content="https://img.mobiscroll.com/market/fb-home.png">
+
+
+   <meta name="robots" content="noindex">
+
+   <title>Calendar Add/edit/delete events Fullscreen Example | Mobiscroll</title>
+
+
+
+   <link href="/Content/theta?v=GDyV8QH7JX7NGY5Kb3ZXy6fGaIPVlxbWMpm7gUI9UXc1" rel="stylesheet">
+
+
+
+
+
+   <link href="/Content/demo.fullscreen.5x?v=nkYhA1PW_zEnrQn-3QltshHuI7XryZSVES9loNYsd6M1" rel="stylesheet">
+
+
+   <style type="text/css" id="demo-css">
+      .event-color-c {
+         display: flex;
+         margin: 16px;
+         align-items: center;
+         cursor: pointer;
+      }
+
+      .event-color-label {
+         flex: 1 0 auto;
+      }
+
+      .event-color {
+         width: 30px;
+         height: 30px;
+         border-radius: 15px;
+         margin-right: 10px;
+         margin-left: 240px;
+         background: #5ac8fa;
+      }
+
+      .crud-color-row {
+         display: flex;
+         justify-content: center;
+         margin: 5px;
+      }
+
+      .crud-color-c {
+         padding: 3px;
+         margin: 2px;
+      }
+
+      .crud-color {
+         position: relative;
+         min-width: 46px;
+         min-height: 46px;
+         margin: 2px;
+         cursor: pointer;
+         border-radius: 23px;
+         background: #5ac8fa;
+      }
+
+      .crud-color-c.selected,
+      .crud-color-c:hover {
+         box-shadow: inset 0 0 0 3px #007bff;
+         border-radius: 48px;
+      }
+
+      .crud-color:before {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin-top: -10px;
+         margin-left: -10px;
+         color: #f7f7f7;
+         font-size: 20px;
+         text-shadow: 0 0 3px #000;
+         display: none;
+      }
+
+      .crud-color-c.selected .crud-color:before {
+         display: block;
+      }
+   </style>
+
+
+
+
+   <script type="text/javascript" src="//use.typekit.net/xdb8dcb.js"></script>
+   <style type="text/css">
+      .tk-skippy-sharp {
+         font-family: "skippy-sharp", sans-serif;
+      }
+
+      .tk-myriad-pro {
+         font-family: "myriad-pro", sans-serif;
+      }
+   </style>
+   <style type="text/css">
+      @font-face {
+         font-family: skippy-sharp;
+         src: url(https://use.typekit.net/af/9393c5/00000000000000003b9b416e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/9393c5/00000000000000003b9b416e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/9393c5/00000000000000003b9b416e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");
+         font-weight: 400;
+         font-style: normal;
+         font-stretch: normal;
+         font-display: auto;
+      }
+
+      @font-face {
+         font-family: myriad-pro;
+         src: url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=i4&v=3) format("woff2"), url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=i4&v=3) format("woff"), url(https://use.typekit.net/af/d32e26/00000000000000000001709b/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=i4&v=3) format("opentype");
+         font-weight: 400;
+         font-style: italic;
+         font-stretch: normal;
+         font-display: auto;
+      }
+
+      @font-face {
+         font-family: myriad-pro;
+         src: url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3) format("woff2"), url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3) format("woff"), url(https://use.typekit.net/af/c630c3/000000000000000000017098/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3) format("opentype");
+         font-weight: 300;
+         font-style: normal;
+         font-stretch: normal;
+         font-display: auto;
+      }
+
+      @font-face {
+         font-family: myriad-pro;
+         src: url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/cafa63/00000000000000000001709a/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3) format("opentype");
+         font-weight: 400;
+         font-style: normal;
+         font-stretch: normal;
+         font-display: auto;
+      }
+
+      @font-face {
+         font-family: myriad-pro;
+         src: url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3) format("woff2"), url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3) format("woff"), url(https://use.typekit.net/af/80c5d0/00000000000000000001709c/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3) format("opentype");
+         font-weight: 600;
+         font-style: normal;
+         font-stretch: normal;
+         font-display: auto;
+      }
+   </style>
+   <script type="text/javascript">
+      // Typekit
+      try { Typekit.load(); } catch (e) { }
+   </script>
+   <style type="text/css" id="CookieConsentStateDisplayStyles">
+      .cookieconsent-optin,
+      .cookieconsent-optin-preferences,
+      .cookieconsent-optin-statistics,
+      .cookieconsent-optin-marketing {
+         display: block;
+         display: initial;
+      }
+
+      .cookieconsent-optout-preferences,
+      .cookieconsent-optout-statistics,
+      .cookieconsent-optout-marketing,
+      .cookieconsent-optout {
+         display: none;
+      }
+   </style>
+   <script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1011197709/?random=1736139870000&amp;cv=11&amp;fst=1736139870000&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4cc1z8844524082za201zb844524082&amp;gcd=13r3r3r3r5l1&amp;dma=0&amp;tag_exp=101925629~102067555~102067808~102081485~102198178&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Fdemo.mobiscroll.com%2Ffullscreen%2Feventcalendar%2Fcreate-read-update-delete-CRUD&amp;ref=https%3A%2F%2Fdemo.mobiscroll.com%2Fjavascript%2Feventcalendar%2Fcreate-read-update-delete-CRUD&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Calendar%20Add%2Fedit%2Fdelete%20events%20Fullscreen%20Example%20%7C%20Mobiscroll&amp;did=dMWZhNz&amp;gdid=dMWZhNz&amp;npa=0&amp;us_privacy=1---&amp;pscdl=noapi&amp;auid=1715523049.1735138542&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=ads_data_redaction%3Dfalse&amp;rfmt=3&amp;fmt=4"></script>
+</head>
+
+<body class="demo-fullscreen demo-page">
+
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDRKTM9"
+   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- End Google Tag Manager (noscript) -->
+   
+       <div class="empty-wrapper" data-enhance="false">
+           
+   
+   
+   
+   
+   <div class="demo-comp-eventcalendar ng-scope demo-display-bubble demo-theme-ios" style="height:100%;" ng-app="demoApp" ng-controller="DemoCtrl" ng-class="'demo-display-' + display + ' demo-theme-' + theme">
+       <div id="demo-wrapper" class="mbsc-page mbsc-font demo-wrapper demo-create-read-update-delete-CRUD  mbsc-ios-dark mbsc-ios mbsc-ltr" mbsc-page="" style="display: block;">
+           <div style="height:100%">
+   <div id="demo565-add-delete-event" class="mbsc-calendar mbsc-font mbsc-flex-col mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-height-md mbsc-calendar-width-md  mbsc-eventcalendar"><div class="mbsc-calendar-wrapper mbsc-flex-col mbsc-ios-dark mbsc-ios mbsc-flex-1-1"><div class="mbsc-calendar-header mbsc-ios-dark mbsc-ios"><div class="mbsc-calendar-controls mbsc-flex mbsc-ios-dark mbsc-ios"><div aria-live="polite" class="mbsc-flex mbsc-flex-1-1 mbsc-calendar-title-wrapper mbsc-ios-dark mbsc-ios"><button tabindex="0" class="mbsc-calendar-button mbsc-reset mbsc-font mbsc-button mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-button-flat" data-index="0" type="button"><span class="mbsc-calendar-title mbsc-calendar-month mbsc-ios-dark mbsc-ios">January</span><span class="mbsc-calendar-title mbsc-calendar-year mbsc-ios-dark mbsc-ios">2025</span></button></div><button tabindex="0" aria-label="Previous page" class="mbsc-calendar-button mbsc-calendar-button-prev mbsc-reset mbsc-font mbsc-button mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-button-flat mbsc-icon-button" type="button"><span class="mbsc-button-icon mbsc-ltr mbsc-icon mbsc-ios-dark mbsc-ios"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z"></path></svg></span></button><button tabindex="0" class="mbsc-calendar-button mbsc-calendar-button-today mbsc-calendar-header-today mbsc-reset mbsc-font mbsc-button mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-button-flat" type="button">Today</button><button tabindex="0" aria-label="Next page" class="mbsc-calendar-button mbsc-calendar-button-next mbsc-reset mbsc-font mbsc-button mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-button-flat mbsc-icon-button" type="button"><span class="mbsc-button-icon mbsc-ltr mbsc-icon mbsc-ios-dark mbsc-ios"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path></svg></span></button></div></div><div class="mbsc-calendar-body mbsc-flex-col mbsc-flex-1-1 mbsc-ios-dark mbsc-ios"><div class="mbsc-calendar-body-inner mbsc-flex-col mbsc-flex-1-1"><div class="mbsc-calendar-picker mbsc-calendar-picker-main"><div class="mbsc-calendar-scroll-wrapper mbsc-ios-dark mbsc-ios mbsc-ltr"><div><div class="mbsc-scrollview-scroll mbsc-ltr" style="transform: translate3d(0px, 0px, 0px);"><div class="mbsc-calendar-slide mbsc-ios-dark mbsc-ios mbsc-ltr" style="transform: translateX(-100%); width: 100%;"><div aria-hidden="true" class="mbsc-calendar-table mbsc-flex-col mbsc-flex-1-1"><div aria-hidden="true" class="mbsc-calendar-week-days mbsc-flex"><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Sun</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Mon</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Tue</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Wed</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Thu</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Fri</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Sat</div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-hidden="true" class="mbsc-calendar-month-name mbsc-ios-dark mbsc-ios mbsc-ltr">Dec</div><div aria-label="Sunday, December 1, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">1</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Monday, December 2, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">2</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Tuesday, December 3, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">3</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Wednesday, December 4, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">4</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Thursday, December 5, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">5</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Friday, December 6, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">6</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Saturday, December 7, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">7</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Sunday, December 8, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">8</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Monday, December 9, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">9</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Tuesday, December 10, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">10</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Wednesday, December 11, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">11</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Thursday, December 12, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">12</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Friday, December 13, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">13</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Saturday, December 14, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">14</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Sunday, December 15, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">15</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Monday, December 16, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">16</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Tuesday, December 17, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">17</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Wednesday, December 18, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">18</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Thursday, December 19, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">19</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Friday, December 20, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">20</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Saturday, December 21, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">21</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Sunday, December 22, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">22</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Monday, December 23, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">23</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Tuesday, December 24, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">24</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Wednesday, December 25, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">25</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Thursday, December 26, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">26</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Friday, December 27, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">27</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Saturday, December 28, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">28</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Sunday, December 29, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">29</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Monday, December 30, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">30</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-selected"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Tuesday, December 31, 2024" aria-pressed="true" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">31</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-hidden="true" class="mbsc-calendar-month-name mbsc-ios-dark mbsc-ios mbsc-ltr">Jan</div><div aria-label="Wednesday, January 1, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">1</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Thursday, January 2, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">2</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Friday, January 3, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">3</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Saturday, January 4, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">4</div><div><div class="mbsc-calendar-labels"><div class="mbsc-calendar-labels-row"><div class="mbsc-calendar-label-wrapper" role="button" tabindex="-1" title="Site Visit" style="left: 0%; width: 100%;"><div class="mbsc-calendar-text mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-label mbsc-calendar-label-start mbsc-calendar-label-end" data-id="3" style="color: rgb(63, 81, 181);"><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-start mbsc-ltr"></div><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-end mbsc-ltr"></div><div class="mbsc-calendar-label-background mbsc-ios-dark mbsc-ios"></div><div class="mbsc-calendar-label-inner mbsc-ios-dark mbsc-ios" style="color: rgb(255, 255, 255);"><div aria-hidden="true" class="mbsc-calendar-label-text mbsc-ios-dark mbsc-ios">Site Visit</div><div class="mbsc-hidden-content">Site Visit, Start: Saturday, January 4, 2025, End: Saturday, January 4, 2025</div></div></div></div></div></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Sunday, January 5, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">5</div><div><div class="mbsc-calendar-labels"><div class="mbsc-calendar-labels-row"><div class="mbsc-calendar-label-wrapper" role="button" tabindex="-1" title="Conference" style="left: 0%; width: 100%;"><div class="mbsc-calendar-text mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-label mbsc-calendar-label-start mbsc-calendar-label-end" data-id="2" style="color: rgb(255, 153, 0);"><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-start mbsc-ltr"></div><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-end mbsc-ltr"></div><div class="mbsc-calendar-label-background mbsc-ios-dark mbsc-ios"></div><div class="mbsc-calendar-label-inner mbsc-ios-dark mbsc-ios" style="color: rgb(0, 0, 0);"><div aria-hidden="true" class="mbsc-calendar-label-text mbsc-ios-dark mbsc-ios">Conference</div><div class="mbsc-hidden-content">Conference, Start: Sunday, January 5, 2025, End: Sunday, January 5, 2025</div></div></div></div></div></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Today, Monday, January 6, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios mbsc-calendar-today" role="button" tabindex="-1">6</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Tuesday, January 7, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">7</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Wednesday, January 8, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">8</div><div><div class="mbsc-calendar-labels"><div class="mbsc-calendar-labels-row"><div class="mbsc-calendar-label-wrapper" role="button" tabindex="-1" title="Lunch @ Butcher's" style="left: 0%; width: 100%;"><div class="mbsc-calendar-text mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-label mbsc-calendar-label-start mbsc-calendar-label-end" data-id="1" style="color: rgb(0, 151, 136);"><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-start mbsc-ltr"></div><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-end mbsc-ltr"></div><div class="mbsc-calendar-label-background mbsc-ios-dark mbsc-ios"></div><div class="mbsc-calendar-label-inner mbsc-ios-dark mbsc-ios" style="color: rgb(255, 255, 255);"><div aria-hidden="true" class="mbsc-calendar-label-text mbsc-ios-dark mbsc-ios">Lunch @ Butcher's</div><div class="mbsc-hidden-content">Lunch @ Butcher's, Start: Wednesday, January 8, 2025, End: Wednesday, January 8, 2025</div></div></div></div></div></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Thursday, January 9, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">9</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Friday, January 10, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">10</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Saturday, January 11, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">11</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div></div></div><div class="mbsc-calendar-slide mbsc-calendar-slide-active mbsc-ios-dark mbsc-ios mbsc-ltr" style="transform: translateX(0%); position: relative; width: 100%;"><div class="mbsc-calendar-table mbsc-flex-col mbsc-flex-1-1 mbsc-calendar-table-active"><div aria-hidden="true" class="mbsc-calendar-week-days mbsc-flex"><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Sun</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Mon</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Tue</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Wed</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Thu</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Fri</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Sat</div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1735410600000" aria-label="Sunday, December 29, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">29</div><div><div id="mbsc-calendar-day-desc-1735410600000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1735497000000" aria-label="Monday, December 30, 2024" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">30</div><div><div id="mbsc-calendar-day-desc-1735497000000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer mbsc-selected"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1735583400000" aria-label="Tuesday, December 31, 2024" aria-pressed="true" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="0">31</div><div><div id="mbsc-calendar-day-desc-1735583400000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-hidden="true" class="mbsc-calendar-month-name mbsc-ios-dark mbsc-ios mbsc-ltr">Jan</div><div aria-describedby="mbsc-calendar-day-desc-1735669800000" aria-label="Wednesday, January 1, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">1</div><div><div id="mbsc-calendar-day-desc-1735669800000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1735756200000" aria-label="Thursday, January 2, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">2</div><div><div id="mbsc-calendar-day-desc-1735756200000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1735842600000" aria-label="Friday, January 3, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">3</div><div><div id="mbsc-calendar-day-desc-1735842600000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1735929000000" aria-label="Saturday, January 4, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">4</div><div><div id="mbsc-calendar-day-desc-1735929000000" class="mbsc-calendar-labels"><div class="mbsc-calendar-labels-row"><div class="mbsc-calendar-label-wrapper" role="button" tabindex="0" title="Site Visit" style="left: 0%; width: 100%;"><div class="mbsc-calendar-text mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-label mbsc-calendar-label-start mbsc-calendar-label-end" data-id="3" style="color: rgb(63, 81, 181);"><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-start mbsc-ltr"></div><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-end mbsc-ltr"></div><div class="mbsc-calendar-label-background mbsc-ios-dark mbsc-ios"></div><div class="mbsc-calendar-label-inner mbsc-ios-dark mbsc-ios" style="color: rgb(255, 255, 255);"><div aria-hidden="true" class="mbsc-calendar-label-text mbsc-ios-dark mbsc-ios">Site Visit</div><div class="mbsc-hidden-content">Site Visit, Start: Saturday, January 4, 2025, End: Saturday, January 4, 2025</div></div></div></div></div></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1736015400000" aria-label="Sunday, January 5, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">5</div><div><div id="mbsc-calendar-day-desc-1736015400000" class="mbsc-calendar-labels"><div class="mbsc-calendar-labels-row"><div class="mbsc-calendar-label-wrapper" role="button" tabindex="0" title="Conference" style="left: 0%; width: 100%;"><div class="mbsc-calendar-text mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-label mbsc-calendar-label-start mbsc-calendar-label-end" data-id="2" style="color: rgb(255, 153, 0);"><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-start mbsc-ltr"></div><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-end mbsc-ltr"></div><div class="mbsc-calendar-label-background mbsc-ios-dark mbsc-ios"></div><div class="mbsc-calendar-label-inner mbsc-ios-dark mbsc-ios" style="color: rgb(0, 0, 0);"><div aria-hidden="true" class="mbsc-calendar-label-text mbsc-ios-dark mbsc-ios">Conference</div><div class="mbsc-hidden-content">Conference, Start: Sunday, January 5, 2025, End: Sunday, January 5, 2025</div></div></div></div></div></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1736101800000" aria-label="Today, Monday, January 6, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios mbsc-calendar-today" role="button" tabindex="-1">6</div><div><div id="mbsc-calendar-day-desc-1736101800000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1736188200000" aria-label="Tuesday, January 7, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">7</div><div><div id="mbsc-calendar-day-desc-1736188200000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1736274600000" aria-label="Wednesday, January 8, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">8</div><div><div id="mbsc-calendar-day-desc-1736274600000" class="mbsc-calendar-labels"><div class="mbsc-calendar-labels-row"><div class="mbsc-calendar-label-wrapper" role="button" tabindex="0" title="Lunch @ Butcher's" style="left: 0%; width: 100%;"><div class="mbsc-calendar-text mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-label mbsc-calendar-label-start mbsc-calendar-label-end" data-id="1" style="color: rgb(0, 151, 136);"><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-start mbsc-ltr"></div><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-end mbsc-ltr"></div><div class="mbsc-calendar-label-background mbsc-ios-dark mbsc-ios"></div><div class="mbsc-calendar-label-inner mbsc-ios-dark mbsc-ios" style="color: rgb(255, 255, 255);"><div aria-hidden="true" class="mbsc-calendar-label-text mbsc-ios-dark mbsc-ios">Lunch @ Butcher's</div><div class="mbsc-hidden-content">Lunch @ Butcher's, Start: Wednesday, January 8, 2025, End: Wednesday, January 8, 2025</div></div></div></div></div></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1736361000000" aria-label="Thursday, January 9, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">9</div><div><div id="mbsc-calendar-day-desc-1736361000000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1736447400000" aria-label="Friday, January 10, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">10</div><div><div id="mbsc-calendar-day-desc-1736447400000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1736533800000" aria-label="Saturday, January 11, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">11</div><div><div id="mbsc-calendar-day-desc-1736533800000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1736620200000" aria-label="Sunday, January 12, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">12</div><div><div id="mbsc-calendar-day-desc-1736620200000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1736706600000" aria-label="Monday, January 13, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">13</div><div><div id="mbsc-calendar-day-desc-1736706600000" class="mbsc-calendar-labels"><div class="mbsc-calendar-labels-row"><div class="mbsc-calendar-label-wrapper" role="button" tabindex="0" title="Stakeholder mtg." style="left: 0%; width: 500%;"><div class="mbsc-calendar-text mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-label mbsc-calendar-label-start mbsc-calendar-label-end" data-id="4" style="color: rgb(244, 68, 55);"><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-start mbsc-ltr"></div><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-end mbsc-ltr"></div><div class="mbsc-calendar-label-background mbsc-ios-dark mbsc-ios"></div><div class="mbsc-calendar-label-inner mbsc-ios-dark mbsc-ios" style="color: rgb(255, 255, 255);"><div aria-hidden="true" class="mbsc-calendar-label-text mbsc-ios-dark mbsc-ios">Stakeholder mtg.</div><div class="mbsc-hidden-content">Stakeholder mtg., Start: Monday, January 13, 2025, End: Friday, January 17, 2025</div></div></div></div></div></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1736793000000" aria-label="Tuesday, January 14, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">14</div><div><div id="mbsc-calendar-day-desc-1736793000000" class="mbsc-calendar-labels"><div class="mbsc-calendar-labels-row"><div class="mbsc-calendar-label-wrapper" tabindex="-1" title="Stakeholder mtg." style="left: 0%; width: 400%;"><div class="mbsc-calendar-text mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-label" style="color: rgb(244, 68, 55);"><div class="mbsc-calendar-label-inner mbsc-ios-dark mbsc-ios"><div aria-hidden="true" class="mbsc-calendar-label-text mbsc-ios-dark mbsc-ios"></div><div class="mbsc-hidden-content">Stakeholder mtg., Start: Monday, January 13, 2025, End: Friday, January 17, 2025</div></div></div></div></div></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1736879400000" aria-label="Wednesday, January 15, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">15</div><div><div id="mbsc-calendar-day-desc-1736879400000" class="mbsc-calendar-labels"><div class="mbsc-calendar-labels-row"><div class="mbsc-calendar-label-wrapper" tabindex="-1" title="Stakeholder mtg." style="left: 0%; width: 300%;"><div class="mbsc-calendar-text mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-label" style="color: rgb(244, 68, 55);"><div class="mbsc-calendar-label-inner mbsc-ios-dark mbsc-ios"><div aria-hidden="true" class="mbsc-calendar-label-text mbsc-ios-dark mbsc-ios"></div><div class="mbsc-hidden-content">Stakeholder mtg., Start: Monday, January 13, 2025, End: Friday, January 17, 2025</div></div></div></div></div></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1736965800000" aria-label="Thursday, January 16, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">16</div><div><div id="mbsc-calendar-day-desc-1736965800000" class="mbsc-calendar-labels"><div class="mbsc-calendar-labels-row"><div class="mbsc-calendar-label-wrapper" tabindex="-1" title="Stakeholder mtg." style="left: 0%; width: 200%;"><div class="mbsc-calendar-text mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-label" style="color: rgb(244, 68, 55);"><div class="mbsc-calendar-label-inner mbsc-ios-dark mbsc-ios"><div aria-hidden="true" class="mbsc-calendar-label-text mbsc-ios-dark mbsc-ios"></div><div class="mbsc-hidden-content">Stakeholder mtg., Start: Monday, January 13, 2025, End: Friday, January 17, 2025</div></div></div></div></div></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1737052200000" aria-label="Friday, January 17, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">17</div><div><div id="mbsc-calendar-day-desc-1737052200000" class="mbsc-calendar-labels"><div class="mbsc-calendar-labels-row"><div class="mbsc-calendar-label-wrapper" tabindex="-1" title="Stakeholder mtg." style="left: 0%; width: 100%;"><div class="mbsc-calendar-text mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-label mbsc-calendar-label-end" style="color: rgb(244, 68, 55);"><div class="mbsc-calendar-label-resize mbsc-calendar-label-resize-end mbsc-ltr"></div><div class="mbsc-calendar-label-inner mbsc-ios-dark mbsc-ios"><div aria-hidden="true" class="mbsc-calendar-label-text mbsc-ios-dark mbsc-ios"></div><div class="mbsc-hidden-content">Stakeholder mtg., Start: Monday, January 13, 2025, End: Friday, January 17, 2025</div></div></div></div></div></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1737138600000" aria-label="Saturday, January 18, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">18</div><div><div id="mbsc-calendar-day-desc-1737138600000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1737225000000" aria-label="Sunday, January 19, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">19</div><div><div id="mbsc-calendar-day-desc-1737225000000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1737311400000" aria-label="Monday, January 20, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">20</div><div><div id="mbsc-calendar-day-desc-1737311400000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1737397800000" aria-label="Tuesday, January 21, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">21</div><div><div id="mbsc-calendar-day-desc-1737397800000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1737484200000" aria-label="Wednesday, January 22, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">22</div><div><div id="mbsc-calendar-day-desc-1737484200000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1737570600000" aria-label="Thursday, January 23, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">23</div><div><div id="mbsc-calendar-day-desc-1737570600000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1737657000000" aria-label="Friday, January 24, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">24</div><div><div id="mbsc-calendar-day-desc-1737657000000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1737743400000" aria-label="Saturday, January 25, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">25</div><div><div id="mbsc-calendar-day-desc-1737743400000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1737829800000" aria-label="Sunday, January 26, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">26</div><div><div id="mbsc-calendar-day-desc-1737829800000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1737916200000" aria-label="Monday, January 27, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">27</div><div><div id="mbsc-calendar-day-desc-1737916200000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1738002600000" aria-label="Tuesday, January 28, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">28</div><div><div id="mbsc-calendar-day-desc-1738002600000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1738089000000" aria-label="Wednesday, January 29, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">29</div><div><div id="mbsc-calendar-day-desc-1738089000000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1738175400000" aria-label="Thursday, January 30, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">30</div><div><div id="mbsc-calendar-day-desc-1738175400000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1738261800000" aria-label="Friday, January 31, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">31</div><div><div id="mbsc-calendar-day-desc-1738261800000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-hidden="true" class="mbsc-calendar-month-name mbsc-ios-dark mbsc-ios mbsc-ltr">Feb</div><div aria-describedby="mbsc-calendar-day-desc-1738348200000" aria-label="Saturday, February 1, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">1</div><div><div id="mbsc-calendar-day-desc-1738348200000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1738434600000" aria-label="Sunday, February 2, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">2</div><div><div id="mbsc-calendar-day-desc-1738434600000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1738521000000" aria-label="Monday, February 3, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">3</div><div><div id="mbsc-calendar-day-desc-1738521000000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1738607400000" aria-label="Tuesday, February 4, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">4</div><div><div id="mbsc-calendar-day-desc-1738607400000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1738693800000" aria-label="Wednesday, February 5, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">5</div><div><div id="mbsc-calendar-day-desc-1738693800000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1738780200000" aria-label="Thursday, February 6, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">6</div><div><div id="mbsc-calendar-day-desc-1738780200000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1738866600000" aria-label="Friday, February 7, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">7</div><div><div id="mbsc-calendar-day-desc-1738866600000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-describedby="mbsc-calendar-day-desc-1738953000000" aria-label="Saturday, February 8, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">8</div><div><div id="mbsc-calendar-day-desc-1738953000000" class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div></div></div><div class="mbsc-calendar-slide mbsc-ios-dark mbsc-ios mbsc-ltr" style="transform: translateX(100%); width: 100%;"><div aria-hidden="true" class="mbsc-calendar-table mbsc-flex-col mbsc-flex-1-1"><div aria-hidden="true" class="mbsc-calendar-week-days mbsc-flex"><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Sun</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Mon</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Tue</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Wed</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Thu</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Fri</div><div class="mbsc-calendar-week-day mbsc-flex-1-0-0 mbsc-ios-dark mbsc-ios mbsc-ltr">Sat</div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Sunday, January 26, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">26</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Monday, January 27, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">27</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Tuesday, January 28, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">28</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Wednesday, January 29, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">29</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Thursday, January 30, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">30</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Friday, January 31, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">31</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-hidden="true" class="mbsc-calendar-month-name mbsc-ios-dark mbsc-ios mbsc-ltr">Feb</div><div aria-label="Saturday, February 1, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">1</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Sunday, February 2, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">2</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Monday, February 3, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">3</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Tuesday, February 4, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">4</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Wednesday, February 5, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">5</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Thursday, February 6, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">6</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Friday, February 7, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">7</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Saturday, February 8, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">8</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Sunday, February 9, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">9</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Monday, February 10, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">10</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Tuesday, February 11, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">11</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Wednesday, February 12, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">12</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Thursday, February 13, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">13</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Friday, February 14, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">14</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Saturday, February 15, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">15</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Sunday, February 16, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">16</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Monday, February 17, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">17</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Tuesday, February 18, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">18</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Wednesday, February 19, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">19</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Thursday, February 20, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">20</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Friday, February 21, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">21</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Saturday, February 22, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">22</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Sunday, February 23, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">23</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Monday, February 24, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">24</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Tuesday, February 25, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">25</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Wednesday, February 26, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">26</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Thursday, February 27, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">27</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Friday, February 28, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">28</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-hidden="true" class="mbsc-calendar-month-name mbsc-ios-dark mbsc-ios mbsc-ltr">Mar</div><div aria-label="Saturday, March 1, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">1</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div><div class="mbsc-calendar-row mbsc-flex mbsc-flex-1-0"><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Sunday, March 2, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">2</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Monday, March 3, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">3</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Tuesday, March 4, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">4</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Wednesday, March 5, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">5</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Thursday, March 6, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">6</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Friday, March 7, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">7</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div><div class="mbsc-calendar-cell mbsc-flex-1-0-0 mbsc-calendar-day mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-calendar-day-labels mbsc-calendar-day-outer"><div class="mbsc-calendar-cell-inner mbsc-calendar-day-inner mbsc-ios-dark mbsc-ios"><div aria-label="Saturday, March 8, 2025" aria-pressed="false" class="mbsc-calendar-cell-text mbsc-calendar-day-text mbsc-ios-dark mbsc-ios" role="button" tabindex="-1">8</div><div><div class="mbsc-calendar-labels"></div><div class="mbsc-calendar-text mbsc-calendar-text-placeholder"></div></div></div></div></div></div></div></div></div><div class="mbsc-scroller-bar-cont mbsc-ltr mbsc-scroller-bar-hidden"><div class="mbsc-scroller-bar mbsc-ios-dark mbsc-ios"></div></div></div></div></div></div></div></div>
+   
+   <div style="display: none">
+       <div id="demo565-add-popup" style="display: none;">
+           <div class="mbsc-form-group">
+               <label class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-form-control-wrapper mbsc-textfield-wrapper mbsc-font mbsc-textfield-wrapper-underline mbsc-textfield-wrapper-inline"><span class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-label mbsc-label-inline mbsc-label-underline-inline">
+               Title
+               </span><span class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-textfield-inner mbsc-textfield-inner-underline mbsc-textfield-inner-inline"><input mbsc-input="" id="event-title" class=" mbsc-ios-dark mbsc-ios mbsc-ltr  mbsc-textfield mbsc-textfield-underline mbsc-textfield-inline mbsc-textfield-underline-inline" type="text"></span></label>
+               <label class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-form-control-wrapper mbsc-textfield-wrapper mbsc-font mbsc-textfield-wrapper-underline mbsc-textfield-wrapper-inline mbsc-textarea-wrapper"><span class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-label mbsc-label-inline mbsc-label-underline-inline">
+               Description
+               </span><span class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-textfield-inner mbsc-textfield-inner-underline mbsc-textfield-inner-inline mbsc-textarea-inner"><textarea mbsc-textarea="" id="event-desc" class=" mbsc-ios-dark mbsc-ios mbsc-ltr  mbsc-textfield mbsc-textfield-underline mbsc-textfield-inline mbsc-textfield-underline-inline mbsc-textarea"></textarea></span></label>
+           </div>
+           <div class="mbsc-form-group">
+               <label class="mbsc-switch mbsc-form-control-wrapper mbsc-font  mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-switch-right"><input mbsc-switch="" id="event-all-day" type="checkbox" class="mbsc-form-control-input mbsc-reset"><span class="mbsc-switch-track mbsc-switch-track-right mbsc-ios-dark mbsc-ios"><span class="mbsc-switch-handle mbsc-ios-dark mbsc-ios mbsc-switch-handle-animate" style="left: 0%;"></span></span><span class="mbsc-form-control-label mbsc-ios-dark mbsc-ios">
+               All-day
+               </span></label>
+               <label class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-form-control-wrapper mbsc-textfield-wrapper mbsc-font mbsc-textfield-wrapper-underline mbsc-textfield-wrapper-inline"><span class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-label mbsc-label-inline mbsc-label-underline-inline">
+               Starts
+               </span><span class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-textfield-inner mbsc-textfield-inner-underline mbsc-textfield-inner-inline"><input mbsc-input="" id="start-input" class=" mbsc-ios-dark mbsc-ios mbsc-ltr  mbsc-textfield mbsc-textfield-underline mbsc-textfield-inline mbsc-textfield-underline-inline" type="text" autocomplete="off"></span></label>
+               <label class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-form-control-wrapper mbsc-textfield-wrapper mbsc-font mbsc-textfield-wrapper-underline mbsc-textfield-wrapper-inline"><span class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-label mbsc-label-inline mbsc-label-underline-inline">
+               Ends
+               </span><span class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-textfield-inner mbsc-textfield-inner-underline mbsc-textfield-inner-inline"><input mbsc-input="" id="end-input" class=" mbsc-ios-dark mbsc-ios mbsc-ltr  mbsc-textfield mbsc-textfield-underline mbsc-textfield-inline mbsc-textfield-underline-inline" type="text" autocomplete="off"></span></label>
+           <label id="travel-time-group" class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-form-control-wrapper mbsc-textfield-wrapper mbsc-font mbsc-textfield-wrapper-underline mbsc-textfield-wrapper-inline" style="display: flex;"><span class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-label mbsc-label-inline mbsc-label-underline-inline">Travel time</span><span class=" mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-textfield-inner mbsc-textfield-inner-underline mbsc-textfield-inner-inline"><select data-label="Travel time" mbsc-dropdown="" id="travel-time-selection" class="mbsc-select mbsc-ios-dark mbsc-ios mbsc-ltr  mbsc-textfield mbsc-textfield-underline mbsc-textfield-inline mbsc-textfield-underline-inline"><option value="0">None</option><option value="5">5 minutes</option><option value="15">15 minutes</option><option value="30">30 minutes</option><option value="60">1 hour</option><option value="90">1.5 hours</option><option value="120">2 hours</option></select><span class="mbsc-select-icon mbsc-select-icon-underline mbsc-ltr mbsc-ios-dark mbsc-ios mbsc-select-icon-inline mbsc-icon mbsc-ios-dark mbsc-ios"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path></svg></span></span></label>
+               <div id="event-date"></div>
+               <div id="event-color-picker" class="event-color-c">
+                   <div class="event-color-label">Color</div>
+                   <div id="event-color-cont">
+                       <div id="event-color" class="event-color" style=""></div>
+                   </div>
+               </div>
+               <div mbsc-segmented-group="" id="mbsc-control-1" class="mbsc-segmented mbsc-flex  mbsc-ios-dark mbsc-ios mbsc-ltr"><label class="mbsc-segmented-item  mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-segmented-item-checked mbsc-segmented-item-selected"><input id="event-status-busy" mbsc-segmented="" type="radio" name="event-status" value="busy" aria-labelledby="mbsc-segmented-3" class="mbsc-segmented-input mbsc-reset  mbsc-ios-dark mbsc-ios mbsc-selected"><div class="mbsc-segmented-selectbox mbsc-ios-dark mbsc-ios mbsc-segmented-selectbox-animate mbsc-selected" style="transform: translateX(0%);"><div class="mbsc-segmented-selectbox-inner mbsc-ios-dark mbsc-ios mbsc-segmented-selectbox-inner-visible mbsc-selected"></div></div><span aria-disabled="false" class="mbsc-segmented-button mbsc-selected mbsc-reset mbsc-font mbsc-button mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-button-standard" aria-hidden="true" id="mbsc-segmented-3">
+               Show as busy
+               </span></label><label class="mbsc-segmented-item  mbsc-ios-dark mbsc-ios mbsc-ltr"><input id="event-status-free" mbsc-segmented="" type="radio" name="event-status" value="free" aria-labelledby="mbsc-segmented-4" class="mbsc-segmented-input mbsc-reset  mbsc-ios-dark mbsc-ios"><div class="mbsc-segmented-selectbox mbsc-ios-dark mbsc-ios mbsc-segmented-selectbox-animate" style="transform: translateX(-100%);"><div class="mbsc-segmented-selectbox-inner mbsc-ios-dark mbsc-ios"></div></div><span aria-disabled="false" class="mbsc-segmented-button mbsc-reset mbsc-font mbsc-button mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-button-standard" aria-hidden="true" id="mbsc-segmented-4">
+               Show as free
+               </span></label></div>
+               
+               <div class="mbsc-button-group">
+                   <button class="mbsc-button-block mbsc-reset mbsc-font mbsc-button mbsc-ios-dark mbsc-ios mbsc-ltr mbsc-button-outline mbsc-button-danger" id="event-delete" mbsc-button="" data-color="danger" data-variant="outline" tabindex="0" style="display: none;">Delete event</button>
+               </div>
+           </div>
+       </div><!--popup-->
+   
+       <!--popup--><div id="demo565-event-color" style="display: none;">
+           <div class="crud-color-row">
+               <div class="crud-color-c" data-value="#ffeb3c">
+                   <div class="crud-color mbsc-icon mbsc-font-icon mbsc-icon-material-check" style="background:#ffeb3c"></div>
+               </div>
+               <div class="crud-color-c" data-value="#ff9900">
+                   <div class="crud-color mbsc-icon mbsc-font-icon mbsc-icon-material-check" style="background:#ff9900"></div>
+               </div>
+               <div class="crud-color-c" data-value="#f44437">
+                   <div class="crud-color mbsc-icon mbsc-font-icon mbsc-icon-material-check" style="background:#f44437"></div>
+               </div>
+               <div class="crud-color-c" data-value="#ea1e63">
+                   <div class="crud-color mbsc-icon mbsc-font-icon mbsc-icon-material-check" style="background:#ea1e63"></div>
+               </div>
+               <div class="crud-color-c" data-value="#9c26b0">
+                   <div class="crud-color mbsc-icon mbsc-font-icon mbsc-icon-material-check" style="background:#9c26b0"></div>
+               </div>
+           </div>
+           <div class="crud-color-row">
+               <div class="crud-color-c" data-value="#3f51b5">
+                   <div class="crud-color mbsc-icon mbsc-font-icon mbsc-icon-material-check" style="background:#3f51b5"></div>
+               </div>
+               <div class="crud-color-c selected" data-value="">
+                   <div class="crud-color mbsc-icon mbsc-font-icon mbsc-icon-material-check"></div>
+               </div>
+               <div class="crud-color-c" data-value="#009788">
+                   <div class="crud-color mbsc-icon mbsc-font-icon mbsc-icon-material-check" style="background:#009788"></div>
+               </div>
+               <div class="crud-color-c" data-value="#4baf4f">
+                   <div class="crud-color mbsc-icon mbsc-font-icon mbsc-icon-material-check" style="background:#4baf4f"></div>
+               </div>
+               <div class="crud-color-c" data-value="#7e5d4e">
+                   <div class="crud-color mbsc-icon mbsc-font-icon mbsc-icon-material-check" style="background:#7e5d4e"></div>
+               </div>
+           </div>
+       </div>
+   </div>
+             </div>
+       </div>
+   
+       <div class="toolbar-container">
+           <div class="fullscreen-demo-bar">
+               
+               <div class="demo-theme-icons">
+                   <div title="iOS Theme" class="demo-theme-select demo-theme-active" ng-class="{'demo-theme-active': theme == 'ios'}" ng-click="setTheme('ios')">
+                       <div class="svg svg-ios">
+                           <!--?xml version="1.0" encoding="iso-8859-1"?-->
+   <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+   
+   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+   <g>
+      <path d="M395.748,272.046c-0.646-64.841,52.88-95.938,55.271-97.483c-30.075-44.01-76.925-50.039-93.62-50.736   c-39.871-4.037-77.798,23.474-98.033,23.474c-20.184,0-51.409-22.877-84.476-22.276c-43.458,0.646-83.529,25.269-105.906,64.19   c-45.152,78.35-11.563,194.42,32.445,257.963c21.504,31.104,47.146,66.038,80.813,64.79c32.421-1.294,44.681-20.979,83.878-20.979   c39.196,0,50.215,20.979,84.524,20.335c34.888-0.648,56.991-31.699,78.347-62.898c24.694-36.084,34.862-71.019,35.462-72.812   C463.678,375.26,396.422,349.495,395.748,272.046z M331.28,81.761C349.149,60.082,361.21,30.005,357.92,0   c-25.739,1.048-56.938,17.145-75.405,38.775c-16.57,19.188-31.075,49.813-27.188,79.218   C284.061,120.235,313.392,103.391,331.28,81.761z" fill="#c3c4c9"></path>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   </svg>
+   
+                       </div>
+                   </div>
+                   <div title="Material Theme" class="demo-theme-select" ng-class="{'demo-theme-active': theme == 'material'}" ng-click="setTheme('material')">
+                       <div class="svg svg-android">
+                           <!--?xml version="1.0" encoding="iso-8859-1"?-->
+   <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 505.145 505.145" style="enable-background:new 0 0 505.145 505.145;" xml:space="preserve" width="512px" height="512px">
+   <g>
+      <g>
+         <g>
+            <path d="M68.541,164.715h-1.294c-16.588,0-30.113,13.568-30.113,30.113v131.107     c0,16.61,13.525,30.134,30.113,30.134h1.316c16.588,0,30.113-13.568,30.113-30.134V194.827     C98.654,178.283,85.108,164.715,68.541,164.715z" fill="#c3c4c9"></path>
+            <path d="M113.085,376.54c0,15.229,12.446,27.632,27.675,27.632h29.574v70.817     c0,16.631,13.568,30.156,30.113,30.156h1.294c16.61,0,30.156-13.546,30.156-30.156v-70.817h41.33v70.817     c0,16.631,13.611,30.156,30.156,30.156h1.273c16.609,0,30.134-13.546,30.134-30.156v-70.817h29.595     c15.207,0,27.654-12.403,27.654-27.632V169.525H113.085V376.54z" fill="#c3c4c9"></path>
+            <path d="M322.041,43.983l23.491-36.26c1.51-2.287,0.841-5.414-1.467-6.903     c-2.286-1.51-5.414-0.884-6.903,1.467l-24.353,37.512c-18.27-7.485-38.676-11.691-60.226-11.691     c-21.571,0-41.934,4.206-60.247,11.691l-24.31-37.512c-1.488-2.351-4.638-2.977-6.946-1.467     c-2.308,1.488-2.977,4.616-1.467,6.903l23.512,36.26c-42.387,20.773-70.968,59.924-70.968,104.834     c0,2.761,0.173,5.479,0.41,8.175h280.053c0.237-2.696,0.388-5.414,0.388-8.175C393.009,103.907,364.406,64.756,322.041,43.983z      M187.655,108.911c-7.442,0-13.482-5.997-13.482-13.46c0-7.463,6.04-13.439,13.482-13.439c7.485,0,13.482,5.975,13.482,13.439     S195.097,108.911,187.655,108.911z M317.49,108.911c-7.442,0-13.482-5.997-13.482-13.46c0-7.463,6.04-13.439,13.482-13.439     c7.463,0,13.46,5.975,13.46,13.439C330.95,102.914,324.953,108.911,317.49,108.911z" fill="#c3c4c9"></path>
+            <path d="M437.876,164.715h-1.251c-16.588,0-30.156,13.568-30.156,30.113v131.107     c0,16.61,13.59,30.134,30.156,30.134h1.273c16.609,0,30.113-13.568,30.113-30.134V194.827     C468.011,178.283,454.464,164.715,437.876,164.715z" fill="#c3c4c9"></path>
+         </g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   </svg>
+   
+                       </div>
+                   </div>
+                   <div title="Windows Phone Theme" class="demo-theme-select" ng-class="{'demo-theme-active': theme == 'windows'}" ng-click="setTheme('windows')">
+                       <div class="svg svg-wp">
+                           <!--?xml version="1.0" encoding="iso-8859-1"?-->
+   <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 305 305" style="enable-background:new 0 0 305 305;" xml:space="preserve" width="512px" height="512px">
+   <g id="XMLID_108_">
+      <path id="XMLID_109_" d="M139.999,25.775v116.724c0,1.381,1.119,2.5,2.5,2.5H302.46c1.381,0,2.5-1.119,2.5-2.5V2.5   c0-0.726-0.315-1.416-0.864-1.891c-0.548-0.475-1.275-0.687-1.996-0.583L142.139,23.301   C140.91,23.48,139.999,24.534,139.999,25.775z" fill="#c3c4c9"></path>
+      <path id="XMLID_110_" d="M122.501,279.948c0.601,0,1.186-0.216,1.644-0.616c0.544-0.475,0.856-1.162,0.856-1.884V162.5   c0-1.381-1.119-2.5-2.5-2.5H2.592c-0.663,0-1.299,0.263-1.768,0.732c-0.469,0.469-0.732,1.105-0.732,1.768l0.006,98.515   c0,1.25,0.923,2.307,2.16,2.477l119.903,16.434C122.274,279.94,122.388,279.948,122.501,279.948z" fill="#c3c4c9"></path>
+      <path id="XMLID_138_" d="M2.609,144.999h119.892c1.381,0,2.5-1.119,2.5-2.5V28.681c0-0.722-0.312-1.408-0.855-1.883   c-0.543-0.475-1.261-0.693-1.981-0.594L2.164,42.5C0.923,42.669-0.001,43.728,0,44.98l0.109,97.521   C0.111,143.881,1.23,144.999,2.609,144.999z" fill="#c3c4c9"></path>
+      <path id="XMLID_169_" d="M302.46,305c0.599,0,1.182-0.215,1.64-0.613c0.546-0.475,0.86-1.163,0.86-1.887l0.04-140   c0-0.663-0.263-1.299-0.732-1.768c-0.469-0.469-1.105-0.732-1.768-0.732H142.499c-1.381,0-2.5,1.119-2.5,2.5v117.496   c0,1.246,0.918,2.302,2.151,2.476l159.961,22.504C302.228,304.992,302.344,305,302.46,305z" fill="#c3c4c9"></path>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   </svg>
+   
+                       </div>
+                   </div>
+               </div>
+               <div class="demo-switch-cont">
+                   <div class="demo-theme-switch">
+                       <div title="Light Theme" class="demo-theme-light" ng-class="{'demo-switch-active': themeVariant == 'light'}" ng-click="setThemeVariant('light')">light</div>
+                       <div title="Dark Theme" class="demo-theme-dark demo-switch-active" ng-class="{'demo-switch-active': themeVariant == 'dark'}" ng-click="setThemeVariant('dark')">dark</div>
+                   </div>
+               </div>
+               
+               <div title="English" class="dropdown" style="margin: 0 5px 0 10px;">
+                   <a id="demo-config-locale" class="toolbar-dropdown-quicknav ng-binding" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="flag flag-en" style="left:-8px;top:2px;position:relative;"></span>
+                       English
+                       <span class="micons icon-ion-arrow-down-b"></span>
+                   </a>
+                   <div class="dropdown-menu toolbar-quicknav" aria-labelledby="demo-config-locale">
+                       <div class="toolbar-quicknav-col">
+                               <a title="English" class="toolbar-quicknav-item toolbar-quicknav-item-hover" ng-class="{'toolbar-quicknav-item-hover': lang == 'en'}" ng-click="lang = 'en'; setOption('Lang', lang)">English <span class="flag flag-en" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Arabic" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'ar'}" ng-click="lang = 'ar'; setOption('Lang', lang)">Arabic <span class="flag flag-sa" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Bulgarian" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'bg'}" ng-click="lang = 'bg'; setOption('Lang', lang)">Bulgarian <span class="flag flag-bg" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Català" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'ca'}" ng-click="lang = 'ca'; setOption('Lang', lang)">Català <span class="flag flag-ca" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Cestina" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'cs'}" ng-click="lang = 'cs'; setOption('Lang', lang)">Cestina <span class="flag flag-cs" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Chinese" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'zh'}" ng-click="lang = 'zh'; setOption('Lang', lang)">Chinese <span class="flag flag-zh" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Croatian" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'hr'}" ng-click="lang = 'hr'; setOption('Lang', lang)">Croatian <span class="flag flag-hr" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Dansk" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'da'}" ng-click="lang = 'da'; setOption('Lang', lang)">Dansk <span class="flag flag-da" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Deutsch" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'de'}" ng-click="lang = 'de'; setOption('Lang', lang)">Deutsch <span class="flag flag-de" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="English (GB)" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'en-GB'}" ng-click="lang = 'en-GB'; setOption('Lang', lang)">English (GB) <span class="flag flag-en-GB" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Español" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'es'}" ng-click="lang = 'es'; setOption('Lang', lang)">Español <span class="flag flag-es" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Français" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'fr'}" ng-click="lang = 'fr'; setOption('Lang', lang)">Français <span class="flag flag-fr" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Greek" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'el'}" ng-click="lang = 'el'; setOption('Lang', lang)">Greek <span class="flag flag-gr" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Hindi" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'hi'}" ng-click="lang = 'hi'; setOption('Lang', lang)">Hindi <span class="flag flag-in" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Italiano" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'it'}" ng-click="lang = 'it'; setOption('Lang', lang)">Italiano <span class="flag flag-it" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Japanese" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'ja'}" ng-click="lang = 'ja'; setOption('Lang', lang)">Japanese <span class="flag flag-ja" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Korean" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'ko'}" ng-click="lang = 'ko'; setOption('Lang', lang)">Korean <span class="flag flag-kr" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Lietuvių" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'lt'}" ng-click="lang = 'lt'; setOption('Lang', lang)">Lietuvių <span class="flag flag-lt" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                               <a title="Magyar" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'hu'}" ng-click="lang = 'hu'; setOption('Lang', lang)">Magyar <span class="flag flag-hu" style="position: absolute; right: 220px; margin-top: 2px;"></span></a>
+                       </div>
+                       <div class="toolbar-quicknav-col">
+                               <a title="Nederlands" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'nl'}" ng-click="lang = 'nl'; setOption('Lang', lang)">Nederlands <span class="flag flag-nl" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Norsk" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'no'}" ng-click="lang = 'no'; setOption('Lang', lang)">Norsk <span class="flag flag-no" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Polski" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'pl'}" ng-click="lang = 'pl'; setOption('Lang', lang)">Polski <span class="flag flag-pl" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Português Eu." class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'pt-PT'}" ng-click="lang = 'pt-PT'; setOption('Lang', lang)">Português Eu. <span class="flag flag-pt-PT" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Pt. Brasileiro" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'pt-BR'}" ng-click="lang = 'pt-BR'; setOption('Lang', lang)">Pt. Brasileiro <span class="flag flag-pt-BR" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Română" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'ro'}" ng-click="lang = 'ro'; setOption('Lang', lang)">Română <span class="flag flag-ro" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Serbian" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'sr'}" ng-click="lang = 'sr'; setOption('Lang', lang)">Serbian <span class="flag flag-rs" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Slovencina" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'sk'}" ng-click="lang = 'sk'; setOption('Lang', lang)">Slovencina <span class="flag flag-sk" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Suomi" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'fi'}" ng-click="lang = 'fi'; setOption('Lang', lang)">Suomi <span class="flag flag-fi" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Svenska" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'sv'}" ng-click="lang = 'sv'; setOption('Lang', lang)">Svenska <span class="flag flag-sv" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Thai" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'th'}" ng-click="lang = 'th'; setOption('Lang', lang)">Thai <span class="flag flag-th" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Türkçe" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'tr'}" ng-click="lang = 'tr'; setOption('Lang', lang)">Türkçe <span class="flag flag-tr" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Ukrainian" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'ua'}" ng-click="lang = 'ua'; setOption('Lang', lang)">Ukrainian <span class="flag flag-ua" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Vietnamese " class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'vi'}" ng-click="lang = 'vi'; setOption('Lang', lang)">Vietnamese  <span class="flag flag-vn" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Русский" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'ru'}" ng-click="lang = 'ru'; setOption('Lang', lang)">Русский <span class="flag flag-ru" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="Русский (UA)" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'ru-UA'}" ng-click="lang = 'ru-UA'; setOption('Lang', lang)">Русский (UA) <span class="flag flag-ru-UA" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="עברית" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'he'}" ng-click="lang = 'he'; setOption('Lang', lang)">עברית <span class="flag flag-he" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                               <a title="فارسی" class="toolbar-quicknav-item" ng-class="{'toolbar-quicknav-item-hover': lang == 'fa'}" ng-click="lang = 'fa'; setOption('Lang', lang)">فارسی <span class="flag flag-fa" style="position: absolute; right: 20px; margin-top: 2px;"></span></a>
+                       </div>
+                   </div>
+               </div>
+               <a ng-click="goBackDemoWithHash('create-read-update-delete-CRUD', '', $event)" href="//demo.mobiscroll.com/eventcalendar/create-read-update-delete-CRUD" title="View source" class="gen-btn gen-btn-secondary fullscreen-go-back-btn">go back to demos</a>
+           </div>
+       </div>
+   
+       
+   </div>
+   
+   <script type="text/javascript">
+   
+       var MS = MS || {};
+       MS.needsTrial = true;
+       MS.ngApp = 'demoApp';
+       MS.demopage = MS.demopage || {};
+       MS.demopage.theme = ('' == 'bootstrap' || '' == 'jqm') ? '' : '';
+       MS.demopage.main = true;
+       MS.demopage.component = "eventcalendar";
+       MS.demopage.name = "create-read-update-delete-CRUD";
+       MS.defLanguage = "";
+       MS.baseUrl = "mobiscroll.com";
+       MS.shortUrl = '';
+       MS.demopage.urlVersion = '';
+       MS.demopage.version = 'v5';
+       MS.demopage.frLicenses = [];
+       MS.demopage.activeMaintenance = false;
+       MS.demopage.hasActiveTrial = false;
+       MS.demopage.noAvailableTrial = false && !MS.demopage.hasActiveTrial;
+       MS.demopage.demoID = 565;
+       MS.demopage.isIonic = false;
+       MS.demopage.isIonicReact = false;
+       MS.demopage.framework = "javascript";
+       MS.demopage.staticDemo = false;
+       MS.demopage.fullScreen = true;
+   
+       MS.demopage.langs = {};
+       MS.demopage.countries = {};
+   
+       // need the DOMContentLoaded event because the jquery is avalable after the dom content is loaded
+       document.addEventListener("DOMContentLoaded", function (event) {
+           if (!MS.demopage.staticDemo) {
+               MS.autoDownload = $.cookie('AutoDownloadDemo');
+   
+               if (MS.autoDownload) {
+                   $.removeCookie('AutoDownloadDemo', { path: '/' });
+               }
+   
+               (function () {
+                   var firstRun = true,
+                       $ctx = $('#demo-wrapper').hide(),
+                       markup = $ctx.html();
+   
+                   MS.demopage.init = function ($scope) {
+                       if (firstRun && MS.demopage.version == 'v5') {
+                           $scope.locale = mobiscroll.locale[$scope.lang];
+                           $scope.drag = $scope['drag-drop'] === undefined && MS.demopage.version == 'v5' && (MS.demopage.component == 'scheduler' || MS.demopage.component == 'timeline') ? 'true' : $scope['drag-drop'] === 'true';
+                           $scope.touchUi = $scope.touchUi != 'false';
+                           mobiscroll.setOptions({
+                               clickToCreate: $scope.drag,
+                               dragToCreate: $scope.drag,
+                               dragToMove: $scope.drag,
+                               dragToResize: $scope.drag
+                           });
+                       }
+                       if (!firstRun && MS.demopage.version == 'v5') {
+                           mobiscroll.setOptions({
+                               theme: $scope.theme,
+                               themeVariant: $scope.themeVariant,
+                               locale: mobiscroll.locale[$scope.lang],
+                               touchUi: $scope.touchUi != 'false'
+                           });
+                           $ctx.show();
+                       } else {
+                           // Reload markup
+                           $ctx.html(markup).show();
+   
+                           if ($.mobiscroll) {
+                               $.mobiscroll.setDefaults({
+                                   theme: $scope.theme,
+                                   themeVariant: $scope.themeVariant,
+                                   lang: $scope.lang,
+                                   touchUi: $scope.touchUi != 'false'
+                               });
+                           }
+   
+                           $('body').trigger('mbsc-enhance');
+   
+                           mobiscroll.setOptions({
+     locale: $scope.locale,
+     theme: $scope.theme,themeVariant: $scope.themeVariant, touchUi: $scope.touchUi
+   });
+   
+   $(function () {
+     var oldEvent;
+     var tempEvent = {};
+     var deleteEvent;
+     var restoreEvent;
+     var colorPicker;
+     var tempColor;
+     var $title = $('#event-title');
+     var $description = $('#event-desc');
+     var $allDay = $('#event-all-day');
+     var $statusFree = $('#event-status-free');
+     var $statusBusy = $('#event-status-busy');
+     var $deleteButton = $('#event-delete');
+     var $color = $('#event-color');
+     var $travelTime = $('#travel-time-selection');
+     var datePickerResponsive = {
+       medium: {
+         controls: ['calendar'],
+         touchUi: false,
+       },
+     };
+     var datetimePickerResponsive = {
+       medium: {
+         controls: ['calendar', 'time'],
+         touchUi: false,
+       },
+     };
+     var myData = [
+       {
+         id: 1,
+         start: '2025-01-08T13:00',
+         end: '2025-01-08T13:45',
+         title: "Lunch @ Butcher's",
+         description: '',
+         allDay: false,
+         bufferBefore: 15,
+         free: true,
+         color: '#009788',
+       },
+       {
+         id: 2,
+         start: '2025-01-05T15:00',
+         end: '2025-01-05T16:00',
+         title: 'Conference',
+         description: '',
+         allDay: false,
+         bufferBefore: 30,
+         free: false,
+         color: '#ff9900',
+       },
+       {
+         id: 3,
+         start: '2025-01-04T18:00',
+         end: '2025-01-04T22:00',
+         title: 'Site Visit',
+         description: '',
+         allDay: false,
+         bufferBefore: 60,
+         free: true,
+         color: '#3f51b5',
+       },
+       {
+         id: 4,
+         start: '2025-01-06T10:30',
+         end: '2025-01-06T11:30',
+         title: 'Stakeholder mtg.',
+         description: '',
+         allDay: false,
+         free: false,
+         color: '#f44437',
+       },
+     ];
+   
+     function createAddPopup(elm) {
+       // hide delete button inside add popup
+       $deleteButton.hide();
+   
+       deleteEvent = true;
+       restoreEvent = false;
+   
+       // set popup header text and buttons for adding
+       popup.setOptions({
+         headerText: 'New event',
+         buttons: [
+           'cancel',
+           {
+             text: 'Add',
+             keyCode: 'enter',
+             handler: function () {
+               calendar.updateEvent({
+                 id: tempEvent.id,
+                 title: tempEvent.title,
+                 description: tempEvent.description,
+                 allDay: tempEvent.allDay,
+                 bufferBefore: $travelTime.val(),
+                 start: tempEvent.start,
+                 end: tempEvent.end,
+                 color: tempEvent.color,
+               });
+               // navigate the calendar to the correct view
+               calendar.navigateToEvent(tempEvent);
+               deleteEvent = false;
+               popup.close();
+             },
+             cssClass: 'mbsc-popup-button-primary',
+           },
+         ],
+       });
+   
+       // fill popup with a new event data
+       $title.mobiscroll('getInst').value = tempEvent.title;
+       $description.mobiscroll('getInst').value = '';
+       $allDay.mobiscroll('getInst').checked = false;
+       range.setVal([tempEvent.start, tempEvent.end]);
+       $statusBusy.mobiscroll('getInst').checked = true;
+       range.setOptions({ controls: ['date'], responsive: datePickerResponsive });
+       selectColor('', true);
+       $travelTime.val(0);
+   
+       // set anchor for the popup
+       popup.setOptions({ anchor: elm });
+   
+       popup.open();
+     }
+   
+     function createEditPopup(args) {
+       var ev = args.event;
+       // show delete button inside edit popup
+       $deleteButton.show();
+   
+       deleteEvent = false;
+       restoreEvent = true;
+   
+       // set popup header text and buttons for editing
+       popup.setOptions({
+         headerText: 'Edit event',
+         buttons: [
+           'cancel',
+           {
+             text: 'Save',
+             keyCode: 'enter',
+             handler: function () {
+               var date = range.getVal();
+               var eventToSave = {
+                 id: ev.id,
+                 title: $title.val(),
+                 description: $description.val(),
+                 allDay: $allDay.mobiscroll('getInst').checked,
+                 bufferBefore: $travelTime.val(),
+                 start: date[0],
+                 end: date[1],
+                 free: $statusFree.mobiscroll('getInst').checked,
+                 color: ev.color,
+               };
+               // update event with the new properties on save button click
+               calendar.updateEvent(eventToSave);
+               // navigate the calendar to the correct view
+               calendar.navigateToEvent(eventToSave);
+               restoreEvent = false;
+               popup.close();
+             },
+             cssClass: 'mbsc-popup-button-primary',
+           },
+         ],
+       });
+   
+       // fill popup with the selected event data
+       $title.mobiscroll('getInst').value = ev.title || '';
+       $description.mobiscroll('getInst').value = ev.description || '';
+       $allDay.mobiscroll('getInst').checked = ev.allDay || false;
+       range.setVal([ev.start, ev.end]);
+       selectColor(ev.color, true);
+       $travelTime.val(ev.bufferBefore !== undefined ? ev.bufferBefore : 0);
+   
+       if (ev.free) {
+         $statusFree.mobiscroll('getInst').checked = true;
+       } else {
+         $statusBusy.mobiscroll('getInst').checked = true;
+       }
+   
+       // change range settings based on the allDay
+       range.setOptions({
+         controls: ev.allDay ? ['date'] : ['datetime'],
+         responsive: ev.allDay ? datePickerResponsive : datetimePickerResponsive,
+       });
+   
+       // set anchor for the popup
+       popup.setOptions({ anchor: args.domEvent.currentTarget });
+       popup.open();
+     }
+   
+     var calendar = $('#demo565-add-delete-event')
+       .mobiscroll()
+       .eventcalendar({
+         clickToCreate: 'double',
+         dragToCreate: true,
+         dragToMove: true,
+         dragToResize: true,
+         view: {
+           calendar: { labels: true },
+         },
+         data: myData,
+         onEventClick: function (args) {
+           oldEvent = $.extend({}, args.event);
+           tempEvent = args.event;
+   
+           if (!popup.isVisible()) {
+             createEditPopup(args);
+           }
+         },
+         onEventCreated: function (args) {
+           popup.close();
+   
+           // store temporary event
+           tempEvent = args.event;
+           createAddPopup(args.target);
+         },
+         onEventDeleted: function (args) {
+           mobiscroll.snackbar({
+             
+             theme: $scope.theme,themeVariant: $scope.themeVariant, touchUi: $scope.touchUi,
+             context: $scope.context, scrollLock: $scope.scrollLock,
+             button: {
+               action: function () {
+                 calendar.addEvent(args.event);
+               },
+               text: 'Undo',
+             },
+             message: 'Event deleted',
+           });
+         },
+       })
+       .mobiscroll('getInst');
+   
+     var popup = $('#demo565-add-popup')
+       .mobiscroll()
+       .popup({
+         display: 'bottom',
+         contentPadding: false,
+         fullScreen: true,
+         onClose: function () {
+           if (deleteEvent) {
+             calendar.removeEvent(tempEvent);
+           } else if (restoreEvent) {
+             calendar.updateEvent(oldEvent);
+           }
+         },
+         responsive: {
+           medium: {
+             display: 'anchored',
+             width: 400,
+             fullScreen: false,
+             touchUi: false,
+           },
+         },
+       })
+       .mobiscroll('getInst');
+   
+     $title.on('input', function (ev) {
+       // update current event's title
+       tempEvent.title = ev.target.value;
+     });
+   
+     $description.on('change', function (ev) {
+       // update current event's title
+       tempEvent.description = ev.target.value;
+     });
+   
+     $allDay.on('change', function () {
+       var checked = this.checked;
+   
+       if (checked) {
+         $('#travel-time-group').hide();
+         $travelTime.val(0);
+       } else {
+         $('#travel-time-group').show();
+       }
+   
+       // change range settings based on the allDay
+       range.setOptions({
+         controls: checked ? ['date'] : ['datetime'],
+         responsive: checked ? datePickerResponsive : datetimePickerResponsive,
+       });
+   
+       // update current event's allDay property
+       tempEvent.allDay = checked;
+     });
+   
+     var range = $('#event-date')
+       .mobiscroll()
+       .datepicker({
+         controls: ['date'],
+         select: 'range',
+         startInput: '#start-input',
+         endInput: '#end-input',
+         showRangeLabels: false,
+         touchUi: true,
+         responsive: datePickerResponsive,
+         onChange: function (args) {
+           var date = args.value;
+   
+           // update event's start date
+           tempEvent.start = date[0];
+           tempEvent.end = date[1];
+         },
+       })
+       .mobiscroll('getInst');
+   
+     $('input[name=event-status]').on('change', function () {
+       // update current event's free property
+       tempEvent.free = $statusFree.mobiscroll('getInst').checked;
+     });
+   
+     $deleteButton.on('click', function () {
+       // delete current event on button click
+       calendar.removeEvent(tempEvent);
+   
+       // save a local reference to the deleted event
+       var deletedEvent = tempEvent;
+   
+       popup.close();
+   
+       mobiscroll.snackbar({
+         
+         theme: $scope.theme,themeVariant: $scope.themeVariant, touchUi: $scope.touchUi,
+         context: $scope.context, scrollLock: $scope.scrollLock,
+         button: {
+           action: function () {
+             calendar.addEvent(deletedEvent);
+           },
+           text: 'Undo',
+         },
+         message: 'Event deleted',
+       });
+     });
+   
+     colorPicker = $('#demo565-event-color')
+       .mobiscroll()
+       .popup({
+         display: 'bottom',
+         contentPadding: false,
+         showArrow: false,
+         showOverlay: false,
+         buttons: [
+           'cancel',
+           {
+             text: 'Set',
+             keyCode: 'enter',
+             handler: function () {
+               setSelectedColor();
+             },
+             cssClass: 'mbsc-popup-button-primary',
+           },
+         ],
+         responsive: {
+           medium: {
+             display: 'anchored',
+             anchor: $('#event-color-cont')[0],
+             buttons: {},
+           },
+         },
+       })
+       .mobiscroll('getInst');
+   
+     function selectColor(color, setColor) {
+       $('.crud-color-c').removeClass('selected');
+       $('.crud-color-c[data-value="' + color + '"]').addClass('selected');
+       if (setColor) {
+         $color.css('background', color || '');
+       }
+     }
+   
+     function setSelectedColor() {
+       tempEvent.color = tempColor;
+       $color.css('background', tempColor);
+       colorPicker.close();
+     }
+   
+     $('#event-color-picker').on('click', function () {
+       selectColor(tempEvent.color || '');
+       colorPicker.open();
+     });
+   
+     $('.crud-color-c').on('click', function (ev) {
+       var $elm = $(ev.currentTarget);
+   
+       tempColor = $elm.data('value');
+       selectColor(tempColor);
+   
+       if (!colorPicker.s.buttons.length) {
+         setSelectedColor();
+       }
+     });
+   });
+     ;
+                       }
+                       firstRun = false;
+                   };
+               })();
+           }
+           else {
+               (function () {
+                   var $ctx = $('#demo-wrapper').css('visibility', 'hidden');
+   
+                   MS.demopage.init = function ($scope) {
+                       $scope.locale = mobiscroll.locale[$scope.lang];
+                       $scope.drag = $scope['drag-drop'] === undefined && MS.demopage.version == 'v5' && (MS.demopage.component == 'scheduler' || MS.demopage.component == 'timeline') ? 'true' : $scope['drag-drop'] === 'true';
+                       mobiscroll.setOptions({
+                           theme: $scope.theme,
+                           themeVariant: $scope.themeVariant,
+                           locale: mobiscroll.locale[$scope.lang],
+                           touchUi: $scope.touchUi != 'false',
+                           clickToCreate: $scope.drag,
+                           dragToCreate: $scope.drag,
+                           dragToMove: $scope.drag,
+                           dragToResize: $scope.drag
+                       });
+                       setTimeout(function () {
+                           $ctx.css('visibility', 'visible');
+                       }, 300);
+                   };
+               })();
+           }
+       });
+   
+           MS.demopage.langs['en'] = 'English';
+           MS.demopage.langs['ar'] = 'Arabic';
+           MS.demopage.langs['bg'] = 'Bulgarian';
+           MS.demopage.langs['ca'] = 'Català';
+           MS.demopage.langs['cs'] = 'Cestina';
+           MS.demopage.langs['zh'] = 'Chinese';
+           MS.demopage.langs['hr'] = 'Croatian';
+           MS.demopage.langs['da'] = 'Dansk';
+           MS.demopage.langs['de'] = 'Deutsch';
+           MS.demopage.langs['en-GB'] = 'English (GB)';
+           MS.demopage.langs['es'] = 'Español';
+           MS.demopage.langs['fr'] = 'Français';
+           MS.demopage.langs['el'] = 'Greek';
+           MS.demopage.langs['hi'] = 'Hindi';
+           MS.demopage.langs['it'] = 'Italiano';
+           MS.demopage.langs['ja'] = 'Japanese';
+           MS.demopage.langs['ko'] = 'Korean';
+           MS.demopage.langs['lt'] = 'Lietuvių';
+           MS.demopage.langs['hu'] = 'Magyar';
+           MS.demopage.langs['nl'] = 'Nederlands';
+           MS.demopage.langs['no'] = 'Norsk';
+           MS.demopage.langs['pl'] = 'Polski';
+           MS.demopage.langs['pt-PT'] = 'Português Eu.';
+           MS.demopage.langs['pt-BR'] = 'Pt. Brasileiro';
+           MS.demopage.langs['ro'] = 'Română';
+           MS.demopage.langs['sr'] = 'Serbian';
+           MS.demopage.langs['sk'] = 'Slovencina';
+           MS.demopage.langs['fi'] = 'Suomi';
+           MS.demopage.langs['sv'] = 'Svenska';
+           MS.demopage.langs['th'] = 'Thai';
+           MS.demopage.langs['tr'] = 'Türkçe';
+           MS.demopage.langs['ua'] = 'Ukrainian';
+           MS.demopage.langs['vi'] = 'Vietnamese ';
+           MS.demopage.langs['ru'] = 'Русский';
+           MS.demopage.langs['ru-UA'] = 'Русский (UA)';
+           MS.demopage.langs['he'] = 'עברית';
+           MS.demopage.langs['fa'] = 'فارسی';
+   
+           MS.demopage.countries['en'] = 'en';
+           MS.demopage.countries['ar'] = 'sa';
+           MS.demopage.countries['bg'] = 'bg';
+           MS.demopage.countries['ca'] = 'ca';
+           MS.demopage.countries['cs'] = 'cs';
+           MS.demopage.countries['zh'] = 'zh';
+           MS.demopage.countries['hr'] = 'hr';
+           MS.demopage.countries['da'] = 'da';
+           MS.demopage.countries['de'] = 'de';
+           MS.demopage.countries['en-GB'] = 'en-GB';
+           MS.demopage.countries['es'] = 'es';
+           MS.demopage.countries['fr'] = 'fr';
+           MS.demopage.countries['el'] = 'gr';
+           MS.demopage.countries['hi'] = 'in';
+           MS.demopage.countries['it'] = 'it';
+           MS.demopage.countries['ja'] = 'ja';
+           MS.demopage.countries['ko'] = 'kr';
+           MS.demopage.countries['lt'] = 'lt';
+           MS.demopage.countries['hu'] = 'hu';
+           MS.demopage.countries['nl'] = 'nl';
+           MS.demopage.countries['no'] = 'no';
+           MS.demopage.countries['pl'] = 'pl';
+           MS.demopage.countries['pt-PT'] = 'pt-PT';
+           MS.demopage.countries['pt-BR'] = 'pt-BR';
+           MS.demopage.countries['ro'] = 'ro';
+           MS.demopage.countries['sr'] = 'rs';
+           MS.demopage.countries['sk'] = 'sk';
+           MS.demopage.countries['fi'] = 'fi';
+           MS.demopage.countries['sv'] = 'sv';
+           MS.demopage.countries['th'] = 'th';
+           MS.demopage.countries['tr'] = 'tr';
+           MS.demopage.countries['ua'] = 'ua';
+           MS.demopage.countries['vi'] = 'vn';
+           MS.demopage.countries['ru'] = 'ru';
+           MS.demopage.countries['ru-UA'] = 'ru-UA';
+           MS.demopage.countries['he'] = 'he';
+           MS.demopage.countries['fa'] = 'fa';
+   
+       var tr = {};
+   </script>
+   
+   
+   
+       </div>
+   
+   
+   <script type="text/javascript">
+       var MS = MS || {};
+       MS.mobile = false;
+       
+       MS.FBAppID = "306273539474640";
+       MS.baseUrl = "mobiscroll.com";
+       MS.trialUrl = "https://trial.mobiscroll.com/";
+       MS.disableExternal = false;
+       MS.disableSocial = true;
+   </script>
+   
+       <script src="/Scripts/theta?v=K1FI8mZkj35aDjg6qZQ9OQNgd0yFVfEVMlmXSh9Pbdo1"></script>
+   
+   
+       
+               
+                   <script src="/Scripts/demo.fullscreen.5x?v=1EnYi7cgku6DiGMxWgs9DmORPRsz3XCF57k-uxEwAlc1"></script>
+   
+               
+   
+   
+   
+   
+   
+       <script src="https://www.google.com/recaptcha/api.js?render=6LeyvR0pAAAAAKU93ZTvIe2-5-XOiLnbcOHLWbwz"></script>
+       <script>
+           document.addEventListener('DOMContentLoaded', function () {
+               var forms = document.querySelectorAll('form.recaptcha');
+               for (var i = 0; i < forms.length; i++) {
+                   forms[i].addEventListener('submit', function (e) {
+                       if (e.defaultPrevented) { // validation stopped the submit before
+                           return false;
+                       }
+                       // otherwise proceed with the submit
+                       e.preventDefault();
+                       var form = e.target;
+                       var action = form.getAttribute('data-recaptcha-action') || 'submit';
+                       MS.captcha(form, action, function () {
+                           form.submit();
+                       });
+                   });
+               }
+           });
+       </script>
+   
+   <script>
+       var MS = window.MS || {};
+       MS.captcha = function (form, action, callback) {
+           var grecaptcha = window.grecaptcha;
+           if (grecaptcha) {
+               grecaptcha.ready(function () {
+                   grecaptcha.execute('6LeyvR0pAAAAAKU93ZTvIe2-5-XOiLnbcOHLWbwz', { action: action }).then(function (token) {
+                       var input = form.querySelector('[name="reToken"]');
+                       if (!input) {
+                           input = document.createElement('input');
+                           input.setAttribute('type', 'hidden');
+                           input.setAttribute('name', 'reToken');
+                           form.appendChild(input);
+                       }
+                       input.value = token;
+                       callback();
+                   });
+               });
+           } else {
+               callback();
+           }
+       }
+   </script>
+   
+   
+   
+   <script>
+   window['_fs_debug'] = false;
+   window['_fs_host'] = 'fullstory.com';
+   window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+   window['_fs_org'] = '26TJ9';
+   window['_fs_namespace'] = 'FS';
+   (function(m,n,e,t,l,o,g,y){
+       if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+       g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+       o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+       y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+       g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+       g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+       g.log = function(a,b){g("log",[a,b])};
+       g.consent=function(a){g("consent",!arguments.length||a)};
+       g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+       g.clearUserCookie=function(){};
+       g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+       if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+       g._v="1.1.1";
+   })(window,document,window['_fs_namespace'],'script','user');
+   
+   
+   
+   </script>
+   
+   
+   
+       <script>
+           window.intercomSettings = {
+               app_id: "g2fesnpx",
+               hide_default_launcher: MS.demopage && (MS.mobile || MS.demopage.fullScreen)
+           };
+       </script>
+       <script>
+           (function () {
+               function inIframe () {
+                   try {
+                       return window.self !== window.top;
+                   } catch (e) {
+                       return true;
+                   }
+               }
+   
+               if (inIframe() == false){
+                   window.intercomSettings.widget = {
+                       activator: "#IntercomDefaultWidget"
+                   };
+               }
+           }());
+       </script>
+       <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/g2fesnpx';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+   <script>
+       function setupEmailListener() {
+           var Intercom = window.Intercom;
+           if (typeof Intercom === 'function') {
+               Intercom('onUserEmailSupplied', function (email) {
+                   console.log('email provided');
+                   $.post({
+                       url: '//mobiscroll.com/leademailadded',
+                       data: { provided: true, email: email }
+                   });
+               });
+           }
+       }
+       setupEmailListener();
+   </script>
+   
+   
+   
+   
+   <div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; position: fixed; visibility: hidden; display: block; transition: right 0.3s; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-1ap4fioqqbcz" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeyvR0pAAAAAKU93ZTvIe2-5-XOiLnbcOHLWbwz&amp;co=aHR0cHM6Ly9kZW1vLm1vYmlzY3JvbGwuY29tOjQ0Mw..&amp;hl=en&amp;v=zIriijn3uj5Vpknvt_LnfNbF&amp;size=invisible&amp;cb=9fvs0b74qb47"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><iframe name="__uspapiLocator" tabindex="-1" role="presentation" aria-hidden="true" title="Blank" style="display: none; position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="AW-1011197709" data-load-time="1736139870003" height="0" width="0" src="https://td.doubleclick.net/td/rul/1011197709?random=1736139870000&amp;cv=11&amp;fst=1736139870000&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4cc1z8844524082za201zb844524082&amp;gcd=13r3r3r3r5l1&amp;dma=0&amp;tag_exp=101925629~102067555~102067808~102081485~102198178&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Fdemo.mobiscroll.com%2Ffullscreen%2Feventcalendar%2Fcreate-read-update-delete-CRUD&amp;ref=https%3A%2F%2Fdemo.mobiscroll.com%2Fjavascript%2Feventcalendar%2Fcreate-read-update-delete-CRUD&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Calendar%20Add%2Fedit%2Fdelete%20events%20Fullscreen%20Example%20%7C%20Mobiscroll&amp;did=dMWZhNz&amp;gdid=dMWZhNz&amp;npa=0&amp;us_privacy=1---&amp;pscdl=noapi&amp;auid=1715523049.1735138542&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;fledge=1&amp;data=ads_data_redaction%3Dfalse" style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="G-200FM4RVS4" data-load-time="1736139870038" height="0" width="0" src="https://td.doubleclick.net/td/ga/rul?tid=G-200FM4RVS4&amp;gacid=572368479.1735138542&amp;gtm=45je4cc1v889674094z8844524082za200zb844524082&amp;dma=0&amp;gcs=G111&amp;gcd=13r3r3r3r5l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;tag_exp=101509157~101925629~102067555~102067808~102081485~102198178&amp;z=1074038005" style="display: none; visibility: hidden;"></iframe><iframe tabindex="-1" role="presentation" aria-hidden="true" title="Blank" src="https://consentcdn.cookiebot.com/sdk/bc-v4.min.html" style="position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe><img id="CookiebotSessionPixel" src="https://imgsct.cookiebot.com/1.gif?dgi=a5500808-1f49-4f8c-be43-b0029ec0cf71" alt="Cookiebot session tracker icon loaded" data-cookieconsent="ignore" style="display: none;"><iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important; pointer-events: none;" aria-hidden="true" tabindex="-1" title="Intercom"></iframe><div class="intercom-lightweight-app"><style id="intercom-lightweight-app-style" type="text/css">
+     @keyframes intercom-lightweight-app-launcher {
+       from {
+         opacity: 0;
+         transform: scale(0.5);
+       }
+       to {
+         opacity: 1;
+         transform: scale(1);
+       }
+     }
+   
+     @keyframes intercom-lightweight-app-gradient {
+       from {
+         opacity: 0;
+       }
+       to {
+         opacity: 1;
+       }
+     }
+   
+     @keyframes intercom-lightweight-app-messenger {
+       0% {
+         opacity: 0;
+         transform: scale(0);
+       }
+       40% {
+         opacity: 1;
+       }
+       100% {
+         transform: scale(1);
+       }
+     }
+   
+     .intercom-lightweight-app {
+       position: fixed;
+       z-index: 2147483001;
+       width: 0;
+       height: 0;
+       font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
+     }
+   
+     .intercom-lightweight-app-gradient {
+       position: fixed;
+       z-index: 2147483002;
+       width: 500px;
+       height: 500px;
+       bottom: 0;
+       right: 0;
+       pointer-events: none;
+       background: radial-gradient(
+         ellipse at bottom right,
+         rgba(29, 39, 54, 0.16) 0%,
+         rgba(29, 39, 54, 0) 72%);
+       animation: intercom-lightweight-app-gradient 200ms ease-out;
+     }
+   
+     .intercom-lightweight-app-launcher {
+       position: fixed;
+       z-index: 2147483003;
+       padding: 0 !important;
+       margin: 0 !important;
+       border: none;
+       bottom: 20px;
+       right: 20px;
+       max-width: 48px;
+       width: 48px;
+       max-height: 48px;
+       height: 48px;
+       border-radius: 50%;
+       background: #2B93E6;
+       cursor: pointer;
+       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+       transition: transform 167ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
+       box-sizing: content-box;
+     }
+   
+   
+     .intercom-lightweight-app-launcher:hover {
+       transition: transform 250ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
+       transform: scale(1.1)
+     }
+   
+     .intercom-lightweight-app-launcher:active {
+       transform: scale(0.85);
+       transition: transform 134ms cubic-bezier(0.45, 0, 0.2, 1);
+     }
+   
+   
+     .intercom-lightweight-app-launcher:focus {
+       outline: none;
+   
+       
+     }
+   
+     .intercom-lightweight-app-launcher-icon {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 48px;
+       height: 48px;
+       transition: transform 100ms linear, opacity 80ms linear;
+     }
+   
+     .intercom-lightweight-app-launcher-icon-open {
+       
+           opacity: 1;
+           transform: rotate(0deg) scale(1);
+         
+     }
+   
+     .intercom-lightweight-app-launcher-icon-open svg {
+       width: 24px;
+       height: 24px;
+     }
+   
+     .intercom-lightweight-app-launcher-icon-open svg path {
+       fill: rgb(255, 255, 255);
+     }
+   
+     .intercom-lightweight-app-launcher-icon-self-serve {
+       
+           opacity: 1;
+           transform: rotate(0deg) scale(1);
+         
+     }
+   
+     .intercom-lightweight-app-launcher-icon-self-serve svg {
+       height: 44px;
+     }
+   
+     .intercom-lightweight-app-launcher-icon-self-serve svg path {
+       fill: rgb(255, 255, 255);
+     }
+   
+     .intercom-lightweight-app-launcher-custom-icon-open {
+       max-height: 24px;
+       max-width: 24px;
+   
+       
+           opacity: 1;
+           transform: rotate(0deg) scale(1);
+         
+     }
+   
+     .intercom-lightweight-app-launcher-icon-minimize {
+       
+           opacity: 0;
+           transform: rotate(-60deg) scale(0);
+         
+     }
+   
+     .intercom-lightweight-app-launcher-icon-minimize svg path {
+       fill: rgb(255, 255, 255);
+     }
+   
+     .intercom-lightweight-app-messenger {
+       position: fixed;
+       z-index: 2147483003;
+       overflow: hidden;
+       background-color: white;
+       animation: intercom-lightweight-app-messenger 250ms cubic-bezier(0, 1, 1, 1);
+       transform-origin: bottom right;
+   
+       
+           width: 400px;
+           height: calc(100% - 40px);
+           max-height: 704px;
+           min-height: 250px;
+           right: 20px;
+           bottom: 20px;
+           box-shadow: 0 5px 40px rgba(0,0,0,0.16);
+         
+   
+       border-radius: 16px;
+     }
+   
+     .intercom-lightweight-app-messenger-header {
+       height: 64px;
+       border-bottom: none;
+       background: #2b93e6
+   
+       
+     }
+   
+     .intercom-lightweight-app-messenger-footer{
+       position:absolute;
+       bottom:0;
+       width: 100%;
+       height: 80px;
+       background: #fff;
+       font-size: 14px;
+       line-height: 21px;
+       border-top: 1px solid rgba(0, 0, 0, 0.05);
+       box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+       
+     }
+   
+     @media print {
+       .intercom-lightweight-app {
+         display: none;
+       }
+     }
+   </style></div></body>
+
+</html>

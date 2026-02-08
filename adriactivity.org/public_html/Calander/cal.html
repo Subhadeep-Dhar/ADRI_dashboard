@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar</title>
+    
+    <!-- Include Mobiscroll CSS -->
+    <link rel="stylesheet" href="https://cdn.mobiscroll.com/5.19.1/css/mobiscroll.min.css">
+</head>
+<body>
+    <div id="myCalendar"></div>
+    
+    <!-- Include Mobiscroll JS -->
+    <script src="https://cdn.mobiscroll.com/5.19.1/js/mobiscroll.min.js"></script>
+    
+    <!-- Calendar Initialization Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fetch events from the database
+            fetch('get_events.php')
+                .then(response => response.json())
+                .then(events => {
+                    // Initialize the Mobiscroll calendar with fetched events
+                    mobiscroll.eventcalendar('#myCalendar', {
+                        data: events, // Add events to the calendar
+                        view: {
+                            calendar: { type: 'month' },
+                            eventList: { type: 'day' }
+                        },
+                        clickToCreate: true,
+                        dragToCreate: true,
+                        dragToMove: true,
+                        dragToResize: true,
+                        onEventClick: function (args) {
+                            alert('Event: ' + args.event.title); // Example click handler
+                        }
+                    });
+                })
+                .catch(error => console.error('Error fetching events:', error));
+        });
+    </script>
+</body>
+</html>
